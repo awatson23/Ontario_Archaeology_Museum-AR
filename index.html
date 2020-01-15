@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  <title>Museum of Ontario Archaeology - AR App</title>
+  <script src="js/jsQR.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+  <link href="css/reset.css" rel="stylesheet" type="text/css"> 
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <h1>Museum of Ontario Archaeology - AR App</h1>
+  <!-- Camera Reader -->
+  <div id="loadingMessage" hidden="">⌛ Loading video...</div>
+    <canvas id="canvas" height="480" width="640"></canvas>
+  <!-- Camera Reader -->
+
+  <!-- Footer -->
+  <div id="output">
+    <div id="outputMessage">No QR code detected.</div>
+    <div hidden=""><b>Data:</b><span id="outputData"></span></div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
