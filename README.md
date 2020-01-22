@@ -2,13 +2,15 @@
 Creating a museum AR experience like no other!
 
 ## Student Team
-* Designer
+* **Designer**
    - Aaron Paterson
-
-Aaron Paterson,
+* **HTML & CSS
+   - Heni Manavadariya
+   - Jin Chang
+   
 Cadence Watson,
 Cindy Mena,
-Heni Manavadariya,
+Heni Manavadariya
 Jin Chang
 
 ## Professors
