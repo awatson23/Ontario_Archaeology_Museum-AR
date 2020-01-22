@@ -2,6 +2,9 @@
 Creating a museum AR experience like no other!
 
 ## Student Team
+* Designer
+   - Aaron Paterson
+
 Aaron Paterson,
 Cadence Watson,
 Cindy Mena,
