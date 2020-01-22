@@ -15,8 +15,8 @@ HTML & CSS
    - Cindy Mena
 
 ## Professors
-John Bennett,
-Marco De Luca
+- John Bennett
+- Marco De Luca
 
 
 # What's it for?
