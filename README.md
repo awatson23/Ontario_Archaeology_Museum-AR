@@ -1,17 +1,18 @@
 # Museum AR-Project
 Creating a museum AR experience like no other!
-
+HTML & CSS
 ## Student Team
 * **Designer**
    - Aaron Paterson
-* **HTML & CSS**
+   
+* **Front End Layout** (HTML & CSS)
    - Heni Manavadariya
    - Jin Chang
    
-Cadence Watson,
-Cindy Mena,
-Heni Manavadariya
-Jin Chang
+* **Front End JS**
+   
+   - Cadence Watson
+   - Cindy Mena
 
 ## Professors
 John Bennett,
