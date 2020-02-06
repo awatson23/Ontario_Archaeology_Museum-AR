@@ -1,9 +1,13 @@
 body {
     font-family: 'Ropa Sans', sans-serif;
     color: #333;
-    max-width: 640px;
+    /* max-width: 640px; */
     margin: 0 auto;
     position: relative;
+    /* padding: 20px; */
+    /* align-items: center; */
+    text-align: center;
+    max-width: 812px;
 }
 
 #githubLink {
@@ -46,4 +50,228 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+.details {
+    margin-left: -80px;
+}
+
+#mainNav ul {
+    display: none;
+    margin-top: 30px;
+    background-position: right top;
+}
+
+#mainNav button {
+    background: url(../images/burger.svg) center no-repeat;
+    background-position: right top;
+    width: 30px;
+    height: 30px;
+    transition: all 400ms ease;
+    border: 0;
+    margin: 20px;
+    margin-left: 760px;
+}
+
+#mainNav ul.slideToggle {
+    display: block;
+}
+
+#mainNav button.expanded {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+#mainNav li a {
+    background-color: #fff;
+    display: block;
+    padding: 10px 0 10px 0;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+#mainNav li {
+    border-bottom: 1px solid #333;
+}
+
+#mainNav li:last-child {
+    margin-bottom: 20px;
+}
+
+#mainNav li:first-child {
+    border-top: 1px solid #333;
+}
+
+.logoWrapper {
+    display: flex;
+    margin: 20px auto;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.logoWrapper img {
+    margin: 20px auto;
+    margin-bottom: 80px;
+}
+
+
+/* .logoHeader img {
+    width: 640px;
+    margin-bottom: 20px;
+}
+
+.line {
+    height: 1px;
+    width: 940px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 20px;
+} */
+
+.potImg {
+    width: 800px;
+    height: 840px;
+    background-color: rgb(184, 184, 184);
+    margin-top: 40px;
+    margin-left: 88px;
+}
+
+.circle {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.circ {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(128, 128, 128);
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 200px;
+    /* margin-bottom: 100px; */
+}
+
+.vertLine {
+    height: 400px;
+    width: 3px;
+    margin-top: 200px;
+    margin-left: 170px;
+    margin-right: 150px;
+    /* margin-right: 200px; */
+    background-color: rgb(0, 0, 0);
+}
+
+.potSize p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 45px;
+    margin-left: 80px;
+    /* padding-left: 20px; */
+}
+
+.potInfo h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 500px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 45px;
+    margin-left: 90px;
+}
+
+.potInfo p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 35px;
+    /* font-weight: bold; */
+    line-height: 65px;
+    width: 800px;
+    margin-left: 90px;
+}
+
+.potInfo_2 {
+    margin-top: 800px;
+}
+
+.potInfo_2 p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    line-height: 55px;
+    width: 500px;
+    height: 197px;
+    margin-top: 200px;
+    margin-bottom: -500px;
+    margin-left: 250px;
+}
+
+.img_1 {
+    height: 1000px;
+    width: 500px;
+    border-radius: 1000px 0 0 1000px;
+    background: rgb(147, 147, 147);
+    margin-left: 480px;
+    margin-top: 100px;
+}
+
+.potInfo_3 {
+    margin-top: 500px;
+}
+
+.potInfo_3 p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    /* margin-top: 200px; */
+    margin-bottom: -650px;
+    font-size: 35px;
+    /* font-weight: bold; */
+    line-height: 65px;
+    /* font-weight: 2px; */
+    width: 700px;
+    margin-left: 150px;
+    color: white;
+}
+
+.img_2 {
+    width: 840px;
+    height: 840px;
+    background-color: rgb(184, 184, 184);
+    /* margin-top: 40px; */
+    margin-left: 70px;
+}
+
+.potInfo_4 {
+    margin-top: 500px;
+}
+
+.potInfo_4 p {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    /* margin-top: 200px; */
+    margin-bottom: -750px;
+    font-size: 35px;
+    /* font-weight: bold; */
+    line-height: 65px;
+    /* font-weight: 2px; */
+    width: 700px;
+    margin-left: 150px;
+    color: white;
+}
+
+.img_3 {
+    width: 980px;
+    height: 1040px;
+    background-color: rgb(184, 184, 184);
+    /* margin-top: 40px; */
+    /* margin-left: 0px; */
 }
