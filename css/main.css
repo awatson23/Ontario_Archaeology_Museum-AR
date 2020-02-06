@@ -1,7 +1,9 @@
+
+
 body {
-    font-family: 'Ropa Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
-    /* max-width: 640px; */
+    max-width: 812px;
     margin: 0 auto;
     position: relative;
     /* padding: 20px; */
@@ -50,6 +52,69 @@ h1 {
 
 .hidden {
     display: none;
+}
+
+
+  #mainNav ul
+{
+  display: none;
+  margin-top: 30px;
+  background-position:right top;
+  
+  
+}
+
+#mainNav button
+{
+  background: url(../images/burger.svg) center no-repeat;
+  background-position: right top;
+  width: 30px;
+  height: 15px;
+  transition: all 400ms ease;
+  border: 0;
+  margin: 10px;
+  margin-left: 760px;
+  margin-top: 30px;
+
+}
+
+#mainNav ul.slideToggle
+{
+  display: block;
+  font-size: 24px;
+}
+
+#mainNav button.expanded
+{
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#mainNav li a
+{
+  background-color: #fff;
+  display: block;
+  padding: 10px 0 10px 0;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+#mainNav li 
+{
+  border-bottom: 1px solid #333;
+}
+
+#mainNav li:last-child
+{
+  margin-bottom: 20px;
+}
+
+#mainNav li:first-child
+{
+  border-top: 1px solid #333;
 }
 
 .details {
@@ -106,6 +171,7 @@ h1 {
 }
 
 .logoWrapper {
+
     display: flex;
     margin: 20px auto;
     align-items: center;
@@ -114,23 +180,12 @@ h1 {
     border-bottom: 1px solid #333;
 }
 
-.logoWrapper img {
+
+.logoWrapper img
+{
     margin: 20px auto;
     margin-bottom: 80px;
 }
-
-
-/* .logoHeader img {
-    width: 640px;
-    margin-bottom: 20px;
-}
-
-.line {
-    height: 1px;
-    width: 940px;
-    background-color: rgb(0, 0, 0);
-    margin-left: 20px;
-} */
 
 .potImg {
     width: 800px;
@@ -275,3 +330,4 @@ h1 {
     /* margin-top: 40px; */
     /* margin-left: 0px; */
 }
+
