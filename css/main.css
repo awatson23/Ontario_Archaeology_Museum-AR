@@ -64,17 +64,19 @@ h1 {
   background: url(../images/burger.svg) center no-repeat;
   background-position: right top;
   width: 30px;
-  height: 30px;
+  height: 15px;
   transition: all 400ms ease;
   border: 0;
-  margin: 20px;
+  margin: 10px;
   margin-left: 760px;
+  margin-top: 30px;
 
 }
 
 #mainNav ul.slideToggle
 {
   display: block;
+  font-size: 24px;
 }
 
 #mainNav button.expanded
