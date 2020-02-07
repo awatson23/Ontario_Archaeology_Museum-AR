@@ -306,6 +306,7 @@ h1 {
     opacity: 1;
     width: 500px;
     transform: translateX(50px);
+    z-index: -1;
 
 }
 
