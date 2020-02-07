@@ -54,6 +54,10 @@ h1 {
     display: none;
 }
 
+.mainContainer
+{
+    display: block;
+}
 
   #mainNav ul
 {
@@ -331,3 +335,77 @@ h1 {
     /* margin-left: 0px; */
 }
 
+/* about page section  */
+
+#homeButton
+{
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+
+i {
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 7px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+.aboutUstitle
+{
+    display: block;
+    border-bottom: 3px solid #333;
+    margin-bottom: 80px;
+    margin-top: 150px;
+
+}
+
+.aboutUstitle h3
+{
+    display: block;
+    font-size: 55px;
+    font-weight: 100px;
+    margin: 20px auto;
+    margin-right: 550px;
+    margin-bottom: 60px;
+}
+
+.aboutUs 
+{
+
+}
+
+.aboutUs p
+{
+    text-align: left;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.mainAbout
+{
+    display: flex;
+}
+
+#homeButton
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 812px;
+    margin-top: 80px;
+}
+
+.closeButton
+{
+    cursor: pointer;
+}
+
+.button1 a
+{
+    cursor: pointer;
+    text-decoration: none;
+}
