@@ -171,7 +171,6 @@ h1 {
 }
 
 .logoWrapper {
-
     display: flex;
     margin: 20px auto;
     align-items: center;
@@ -189,9 +188,9 @@ h1 {
 
 .potImg {
     width: 800px;
-    height: 840px;
+    height: 800px;
     background-color: rgb(184, 184, 184);
-    margin-top: 40px;
+    margin-top: 10vh;
     margin-left: 88px;
 }
 
@@ -210,14 +209,14 @@ h1 {
     margin-top: 200px;
     /* margin-bottom: 100px; */
     opacity: 0;
-    transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    transition-delay: 1s;
-    -moz-transition-delay: 1s;
-    -ms-transition-delay: 1s;
-    -o-transition-delay: 1s;
+    transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -o-transition-delay: .5s;
 }
 
 .circ.scroll-anim {
@@ -234,6 +233,11 @@ h1 {
     background-color: rgb(0, 0, 0);
 }
 
+.potSize {
+    margin-top: 30vh;
+    margin-bottom: 40vh;
+}
+
 .potSize p {
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -242,13 +246,29 @@ h1 {
     font-size: 20px;
     line-height: 45px;
     margin-left: 80px;
+    transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    opacity: 0;
     /* padding-left: 20px; */
+}
+
+.potSize p.scroll-anim {
+    opacity: 1;
+}
+
+.potInfo {
+    margin-bottom: 55vh;
 }
 
 .potInfo h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    margin-top: 500px;
     margin-bottom: 40px;
     font-size: 20px;
     font-weight: bold;
@@ -269,7 +289,8 @@ h1 {
 }
 
 .potInfo_2 {
-    margin-top: 800px;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
 }
 
 .potInfo_2 p {
@@ -293,20 +314,21 @@ h1 {
 }
 
 .potInfo_3 {
-    margin-top: 500px;
+    margin-top: 50vh;
+
 }
 
 .potInfo_3 p {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     /* margin-top: 200px; */
-    margin-bottom: -650px;
+    margin-bottom: -625px;
     font-size: 35px;
     /* font-weight: bold; */
     line-height: 65px;
     /* font-weight: 2px; */
     width: 700px;
-    margin-left: 150px;
+    margin-left: 13.5vw;
     color: white;
 }
 
@@ -319,7 +341,7 @@ h1 {
 }
 
 .potInfo_4 {
-    margin-top: 500px;
+    margin-top: 55vh;
 }
 
 .potInfo_4 p {
