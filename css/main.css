@@ -209,6 +209,19 @@ h1 {
     margin-left: 50px;
     margin-top: 200px;
     /* margin-bottom: 100px; */
+    opacity: 0;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+}
+
+.circ.scroll-anim {
+    opacity: 1;
 }
 
 .vertLine {
