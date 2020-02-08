@@ -11,13 +11,21 @@ var scrolldetail1 = new ScrollMagic.Scene({
 
 // slide in image animation
 
-    var scrollimage1 = new ScrollMagic.Scene({
-        triggerElement: '.img_1',
-        triggerHook: .8,
-        reverse:true
-         })
-        .setClassToggle('.img_1', 'scroll-img1')
-        .addTo(controller);
+var scrollimage1 = new ScrollMagic.Scene({
+    triggerElement: '.img_1',
+    triggerHook: .8,
+    reverse: true
+     })
+     .setClassToggle('.img_1', 'scroll-img1')
+     .addTo(controller);
+
+var textimg1 = new ScrollMagic.scene({
+    triggerElement: '.potInfo_2 p',
+    triggerHook: .8,
+    reverse: false 
+     })
+     .setClassToggle('.potInfo_2 p', 'textimg1-anim' )
+
 
 var scrolldetail2 = new ScrollMagic.Scene({
     triggerElement: '.potSize p',
