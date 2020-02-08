@@ -17,14 +17,17 @@ var scrollimage1 = new ScrollMagic.Scene({
     reverse: true
      })
      .setClassToggle('.img_1', 'scroll-img1')
-     .addTo(controller);
+     .addTo(controller);    
 
+
+// text Animation potinfo2
 var textimg1 = new ScrollMagic.scene({
     triggerElement: '.potInfo_2 p',
     triggerHook: .8,
     reverse: false 
      })
      .setClassToggle('.potInfo_2 p', 'textimg1-anim' )
+     .addTo(controller);
 
 
 var scrolldetail2 = new ScrollMagic.Scene({
