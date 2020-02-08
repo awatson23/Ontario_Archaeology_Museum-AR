@@ -387,7 +387,6 @@ h1 {
     -ms-transition-delay: 1s;
     -o-transition-delay: 1s;
     opacity: 0;
-
 }
 
 .potInfo_3  p.textimg2-anim {
@@ -395,12 +394,23 @@ h1 {
 }
     
 
+.potInfo_3  p.textimg2-anim {
+    opacity: 1;
+    transform: translateX(10%)
+    
+}
+    
+
+
 .img_2 {
     position: relative;
     width: 100%;
     height: 840px;
     background-color: rgb(184, 184, 184);
     /* margin-top: 40px; */
+    background-color: rgb(184, 184, 184);
+    /* margin-top: 40px; */
+    margin-left: 70px;
     opacity: 0;
     transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -410,12 +420,12 @@ h1 {
     -moz-transition-delay: 1s;
     -ms-transition-delay: 1s;
     -o-transition-delay: 1s;
+    position: relative;
     z-index: -1;
 }
 .img_2.scroll-img2 {
     opacity: 1;
     transform: translate(0%, 6%) matrix(2, 0, 0, 1, 0, 0)
-
 }
 
 .potInfo_4 {

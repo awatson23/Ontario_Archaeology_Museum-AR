@@ -24,7 +24,7 @@ var scrollimage1 = new ScrollMagic.Scene({
 var textimg1 = new ScrollMagic.Scene({
     triggerElement: '.potInfo_2 p',
     triggerHook: .9,
-    reverse: false 
+    reverse: true 
      })
      .setClassToggle('.potInfo_2 p', 'textimg1-anim' )
      .addTo(controller);
@@ -47,3 +47,20 @@ var scrolldetail3 = new ScrollMagic.Scene({
     .addTo(controller);
 
 
+    // left to right box animation
+    
+var scrollimage2 = new ScrollMagic.Scene({
+    triggerElement: '.img_2',
+    triggerHook: .8,
+    reverse: true
+        })
+    .setClassToggle('.img_2', 'scroll-img2')
+    .addTo(controller);
+
+var textimg2 = new ScrollMagic.Scene({
+    triggerElement: '.potInfo_3 p',
+    triggerHook: .9,
+    reverse: true 
+        })
+        .setClassToggle('.potInfo_3 p', 'textimg2-anim' )
+        .addTo(controller);
