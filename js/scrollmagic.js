@@ -31,11 +31,19 @@ var textimg1 = new ScrollMagic.scene({
 
 
 var scrolldetail2 = new ScrollMagic.Scene({
-    triggerElement: '.potSize p',
-    triggerHook: 1,
+    triggerElement: '.potSize',
+    triggerHook: .6,
     reverse: true
         })
     .setClassToggle('.potSize p', 'scroll-anim')
+    .addTo(controller);
+
+var scrolldetail3 = new ScrollMagic.Scene({
+    triggerElement: '.potInfo',
+    triggerHook: .8,
+    reverse: true
+        })
+    .setClassToggle('.potInfo', 'scroll-anim')
     .addTo(controller);
 
 

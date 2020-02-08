@@ -243,13 +243,13 @@ h1 {
     text-align: center;
     margin-top: 100px;
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: 35px;
     line-height: 45px;
     margin-left: 80px;
-    transition: all 1.5s ease;
-    -moz-transition: all 1.5s ease;
-    -ms-transition: all 1.5s ease;
-    -o-transition: all 1.5s ease;
+    transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
     transition-delay: .5s;
     -moz-transition-delay: .5s;
     -ms-transition-delay: .5s;
@@ -264,13 +264,26 @@ h1 {
 
 .potInfo {
     margin-bottom: 55vh;
+    transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    opacity: 0;
+}
+
+.potInfo.scroll-anim {
+    opacity: .9;
 }
 
 .potInfo h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: 3vw;
     font-weight: bold;
     line-height: 45px;
     margin-left: 90px;
@@ -322,13 +335,12 @@ h1 {
 
 .img_1 {
     height: 1000px;
-    /* width: 500px; */
+    width: 500px;
     border-radius: 1000px 0 0 1000px;
     background: rgb(147, 147, 147);
     margin-left: 480px;
     margin-top: 100px;
     opacity: 0;
-
     transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -349,7 +361,6 @@ h1 {
 
 .potInfo_3 {
     margin-top: 50vh;
-
 }
 
 .potInfo_3 p {
