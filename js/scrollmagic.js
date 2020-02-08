@@ -47,3 +47,12 @@ var scrolldetail3 = new ScrollMagic.Scene({
     .addTo(controller);
 
 
+    // left to right box animation
+    
+var scrollimage2 = new ScrollMagic.Scene({
+    triggerElement: '.img_2',
+    triggerHook: .8,
+    reverse: true
+        })
+    .setClassToggle('.img_2', 'scroll-img2')
+    .addTo(controller);

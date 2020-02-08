@@ -384,6 +384,24 @@ h1 {
     background-color: rgb(184, 184, 184);
     /* margin-top: 40px; */
     margin-left: 70px;
+    opacity: 0;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    position: relative;
+    z-index: -1;
+}
+.img_2.scroll-img2 {
+    opacity: 1;
+    transform: translate(0%, 6%) matrix(2, 0, 0, 1, 0, 0)
+    
+    
+
 }
 
 .potInfo_4 {
@@ -412,5 +430,5 @@ h1 {
     /* margin-left: 0px; */
 }
 
-/* Animation Cindy */
+/* Animation box slide left to right  */
 
