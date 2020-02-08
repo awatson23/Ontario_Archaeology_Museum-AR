@@ -24,7 +24,7 @@ var scrollimage1 = new ScrollMagic.Scene({
 var textimg1 = new ScrollMagic.Scene({
     triggerElement: '.potInfo_2 p',
     triggerHook: .9,
-    reverse: false 
+    reverse: true 
      })
      .setClassToggle('.potInfo_2 p', 'textimg1-anim' )
      .addTo(controller);
