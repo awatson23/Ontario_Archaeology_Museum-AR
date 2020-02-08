@@ -21,9 +21,9 @@ var scrollimage1 = new ScrollMagic.Scene({
 
 
 // text Animation potinfo2
-var textimg1 = new ScrollMagic.scene({
+var textimg1 = new ScrollMagic.Scene({
     triggerElement: '.potInfo_2 p',
-    triggerHook: .8,
+    triggerHook: .9,
     reverse: false 
      })
      .setClassToggle('.potInfo_2 p', 'textimg1-anim' )
@@ -32,7 +32,7 @@ var textimg1 = new ScrollMagic.scene({
 
 var scrolldetail2 = new ScrollMagic.Scene({
     triggerElement: '.potSize',
-    triggerHook: .6,
+    triggerHook: .8,
     reverse: true
         })
     .setClassToggle('.potSize p', 'scroll-anim')
