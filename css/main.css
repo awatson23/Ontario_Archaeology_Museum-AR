@@ -319,21 +319,23 @@ h1 {
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
     -o-transition: all 1s ease;
-    transition-delay: 1s;
+    transition-delay: 2s;
     -moz-transition-delay: 1s;
     -ms-transition-delay: 1s;
     -o-transition-delay: 1s;
     opacity: 0;
-    transform: scale(0%);
+    
 
 }
 
 .potInfo_2  p.textimg1-anim {
     opacity: 1;
-    transform: scale(100%);
+    transform: translateX(10%)
+    
 }
 
 .img_1 {
+    position: relative;
     height: 1000px;
     width: 500px;
     border-radius: 1000px 0 0 1000px;
@@ -374,14 +376,53 @@ h1 {
     width: 700px;
     margin-left: 13.5vw;
     color: white;
+
+    transition: all 2s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition-delay: 2s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    opacity: 0;
+    
+
 }
 
+.potInfo_3  p.textimg2-anim {
+    opacity: 1;
+    transform: translateX(10%)
+    
+}
+    
+
+
 .img_2 {
+    position: relative;
     width: 840px;
     height: 840px;
     background-color: rgb(184, 184, 184);
     /* margin-top: 40px; */
     margin-left: 70px;
+    opacity: 0;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    position: relative;
+    z-index: -1;
+}
+.img_2.scroll-img2 {
+    opacity: 1;
+    transform: translate(0%, 6%) matrix(2, 0, 0, 1, 0, 0)
+    
+    
+
 }
 
 .potInfo_4 {
@@ -410,5 +451,5 @@ h1 {
     /* margin-left: 0px; */
 }
 
-/* Animation Cindy */
+/* Animation box slide left to right  */
 
