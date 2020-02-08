@@ -118,7 +118,7 @@ h1 {
 }
 
 .details {
-    margin-left: -80px;
+    margin-left: -8vw;
 }
 
 #mainNav ul {
@@ -205,7 +205,7 @@ h1 {
     width: 400px;
     background-color: rgb(128, 128, 128);
     border-radius: 50%;
-    margin-left: 50px;
+    margin-left: 15%;
     margin-top: 200px;
     /* margin-bottom: 100px; */
     opacity: 0;
@@ -221,6 +221,7 @@ h1 {
 
 .circ.scroll-anim {
     opacity: 1;
+    transform: translateX(-20%);
 }
 
 .vertLine {
@@ -297,8 +298,9 @@ h1 {
     font-size: 35px;
     /* font-weight: bold; */
     line-height: 65px;
-    width: 800px;
-    margin-left: 90px;
+    width: 80%;
+    margin-left: 15%;
+    
 }
 
 .potInfo_2 {
@@ -314,7 +316,7 @@ h1 {
     height: 197px;
     margin-top: 200px;
     margin-bottom: -500px;
-    margin-left: 250px;
+    margin-left: 22vw;
     transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -373,10 +375,9 @@ h1 {
     /* font-weight: bold; */
     line-height: 65px;
     /* font-weight: 2px; */
-    width: 700px;
-    margin-left: 13.5vw;
+    width: 80%;
+    margin-left: 14vw;
     color: white;
-
     transition: all 2s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -386,9 +387,12 @@ h1 {
     -ms-transition-delay: 1s;
     -o-transition-delay: 1s;
     opacity: 0;
-    
-
 }
+
+.potInfo_3  p.textimg2-anim {
+    opacity: 1;
+}
+    
 
 .potInfo_3  p.textimg2-anim {
     opacity: 1;
@@ -400,8 +404,10 @@ h1 {
 
 .img_2 {
     position: relative;
-    width: 840px;
+    width: 100%;
     height: 840px;
+    background-color: rgb(184, 184, 184);
+    /* margin-top: 40px; */
     background-color: rgb(184, 184, 184);
     /* margin-top: 40px; */
     margin-left: 70px;
@@ -420,9 +426,6 @@ h1 {
 .img_2.scroll-img2 {
     opacity: 1;
     transform: translate(0%, 6%) matrix(2, 0, 0, 1, 0, 0)
-    
-    
-
 }
 
 .potInfo_4 {
