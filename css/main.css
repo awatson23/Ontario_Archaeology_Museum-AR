@@ -315,8 +315,22 @@ h1 {
     margin-top: 200px;
     margin-bottom: -500px;
     margin-left: 250px;
-    position: absolute;
-    z-index: 1;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    /* opacity: 0; */
+    transform: scale(0%);
+
+}
+
+.potInfo_2  p.textimg1-anim {
+    /* opacity: 1; */
+    transform: scale(100%);
 }
 
 .img_1 {
@@ -339,7 +353,10 @@ h1 {
 
 .img_1.scroll-img1 {
     opacity: 1;
-    transform: translateX(50px);
+    width: 500px;
+    transform: translateX(75%);
+    z-index: -1;
+
 }
 
 .potInfo_3 {
