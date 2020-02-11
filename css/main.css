@@ -54,12 +54,8 @@ h1 {
     display: none;
 }
 
-.mainContainer
-{
-    display: block;
-}
 
-  #mainNav ul
+#mainNav ul
 {
   display: none;
   margin-top: 30px;
@@ -122,7 +118,7 @@ h1 {
 }
 
 .details {
-    margin-left: -80px;
+    margin-left: -8vw;
 }
 
 #mainNav ul {
@@ -175,7 +171,6 @@ h1 {
 }
 
 .logoWrapper {
-
     display: flex;
     margin: 20px auto;
     align-items: center;
@@ -193,9 +188,9 @@ h1 {
 
 .potImg {
     width: 800px;
-    height: 840px;
+    height: 800px;
     background-color: rgb(184, 184, 184);
-    margin-top: 40px;
+    margin-top: 10vh;
     margin-left: 88px;
 }
 
@@ -210,9 +205,23 @@ h1 {
     width: 400px;
     background-color: rgb(128, 128, 128);
     border-radius: 50%;
-    margin-left: 50px;
+    margin-left: 15%;
     margin-top: 200px;
     /* margin-bottom: 100px; */
+    opacity: 0;
+    transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -o-transition-delay: .5s;
+}
+
+.circ.scroll-anim {
+    opacity: 1;
+    transform: translateX(-20%);
 }
 
 .vertLine {
@@ -225,23 +234,57 @@ h1 {
     background-color: rgb(0, 0, 0);
 }
 
+.potSize {
+    margin-top: 30vh;
+    margin-bottom: 40vh;
+}
+
 .potSize p {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     margin-top: 100px;
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: 35px;
     line-height: 45px;
     margin-left: 80px;
+    transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    opacity: 0;
     /* padding-left: 20px; */
+}
+
+.potSize p.scroll-anim {
+    opacity: 1;
+}
+
+.potInfo {
+    margin-bottom: 55vh;
+    transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    opacity: 0;
+}
+
+.potInfo.scroll-anim {
+    opacity: .9;
 }
 
 .potInfo h2 {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    margin-top: 500px;
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: 3vw;
     font-weight: bold;
     line-height: 45px;
     margin-left: 90px;
@@ -255,12 +298,14 @@ h1 {
     font-size: 35px;
     /* font-weight: bold; */
     line-height: 65px;
-    width: 800px;
-    margin-left: 90px;
+    width: 80%;
+    margin-left: 15%;
+    
 }
 
 .potInfo_2 {
-    margin-top: 800px;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
 }
 
 .potInfo_2 p {
@@ -271,46 +316,119 @@ h1 {
     height: 197px;
     margin-top: 200px;
     margin-bottom: -500px;
-    margin-left: 250px;
+    margin-left: 22vw;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition-delay: 2s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    opacity: 0;
+    
+
+}
+
+.potInfo_2  p.textimg1-anim {
+    opacity: 1;
+    transform: translateX(10%)
+    
 }
 
 .img_1 {
+    position: relative;
     height: 1000px;
     width: 500px;
     border-radius: 1000px 0 0 1000px;
     background: rgb(147, 147, 147);
-    margin-left: 480px;
+    margin-left: 90%;
     margin-top: 100px;
+    opacity: 0;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+}
+
+.img_1.scroll-img1 {
+    opacity: 1;
+    transform: translateX(-60%);
+    z-index: -1;
+
 }
 
 .potInfo_3 {
-    margin-top: 500px;
+    margin-top: 50vh;
 }
 
 .potInfo_3 p {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     /* margin-top: 200px; */
-    margin-bottom: -650px;
+    margin-bottom: -625px;
     font-size: 35px;
     /* font-weight: bold; */
     line-height: 65px;
     /* font-weight: 2px; */
-    width: 700px;
-    margin-left: 150px;
+    width: 80%;
+    margin-left: 7vw;
     color: white;
+    transition: all 2s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition-delay: 2s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    opacity: 0;
 }
 
+.potInfo_3  p.textimg2-anim {
+    opacity: 1;
+}
+    
+
+.potInfo_3  p.textimg2-anim {
+    opacity: 1;
+    transform: translateX(10%)
+    
+}
+    
+
+
 .img_2 {
-    width: 840px;
+    position: relative;
+    width: 100%;
     height: 840px;
     background-color: rgb(184, 184, 184);
     /* margin-top: 40px; */
-    margin-left: 70px;
+    background-color: rgb(184, 184, 184);
+    /* margin-top: 40px; */
+    opacity: 0;
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    position: relative;
+    z-index: -1;
+}
+.img_2.scroll-img2 {
+    opacity: 1;
+    transform: translate(0%, 6%) matrix(2, 0, 0, 1, 0, 0)
 }
 
 .potInfo_4 {
-    margin-top: 500px;
+    margin-top: 55vh;
 }
 
 .potInfo_4 p {
@@ -335,85 +453,5 @@ h1 {
     /* margin-left: 0px; */
 }
 
-/* about page section  */
+/* Animation box slide left to right  */
 
-#homeButton
-{
-    font-weight: bold;
-    font-size: 24px;
-    margin-top: 20px;
-}
-
-
-i {
-    border: solid black;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 7px;
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-  }
-
-.aboutUstitle
-{
-    display: block;
-    border-bottom: 3px solid #333;
-    margin-bottom: 80px;
-    margin-top: 150px;
-    width: 100%;
-    height: 100%;
-
-}
-
-.aboutUstitle h3
-{
-    display: block;
-    font-size: 55px;
-    font-weight: 100px;
-    margin: 20px auto;
-    margin-right: 550px;
-    margin-bottom: 60px;
-    width: 100%;
-    text-align: left;
-    
-
-    
-}
-
-.aboutUs 
-{
-
-}
-
-.aboutUs p
-{
-    text-align: left;
-    font-size: 20px;
-    line-height: 60px;
-}
-
-.mainAbout
-{
-    display: flex;
-}
-
-#homeButton
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 812px;
-    margin-top: 80px;
-}
-
-.closeButton
-{
-    cursor: pointer;
-}
-
-.button1 a
-{
-    cursor: pointer;
-    text-decoration: none;
-}
