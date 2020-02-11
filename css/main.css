@@ -104,7 +104,7 @@ h1 {
 }
 
 .details {
-    margin-left: -40px;
+    margin-left: -80px;
 }
 
 .logoWrapper {
@@ -305,7 +305,8 @@ h1 {
     height: 197px;
     margin-top: 200px;
     margin-bottom: -500px;
-    margin-left: 22vw;
+    margin-left: 8vw;
+    /* margin-right: -200px; */
     transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -328,8 +329,10 @@ h1 {
     width: 500px;
     border-radius: 1000px 0 0 1000px;
     background: rgb(147, 147, 147);
-    margin-left: 100%;
-    margin-top: 100px;
+    margin-left: 15%;
+    margin-left: 500px;
+    margin-top: 200px;
+    /* margin-right: -20px; */
     opacity: 0;
     transition: all 1s ease;
     -moz-transition: all 1s ease;
