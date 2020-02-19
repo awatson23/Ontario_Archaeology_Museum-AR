@@ -5,95 +5,101 @@
     <meta charset="UTF-8">
     <title>Museum of Ontario Archaeology - AR App</title>
     <script src="js/jsQR.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap"
+        rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <div class="mainContainer">
-        <h2 class="hidden">Main Container</h2>
-        <nav id="mainNav">
-            <h2 class="hidden">Main Nav</h2>
-
-
-            <button id="button"></button>
-            <ul id="burgerMenu">
-                <li><a href="#">Longhouse History</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Support Us</a></li>
+        <!-- Main Navigation -->
+        <div class="nav">
+            <h2 class="hidden">Main Navigator</h2>
+            <ul class="nav-links">
+                <li><a href="#">home</a></li>
+                <li><a href="longhouse.html">longhouse history</a></li>
+                <li><a href="about.html">about us</a></li>
+                <li><a href="supportus.html">support us</a></li>
+                <li><a href="#">faq</a></li>
             </ul>
-
-
-        </nav>
-
-    </div>
-
-    <div class="logoWrapper">
-        <h2 class="hidden">Logo</h2>
-        <img src="images/moalogo_final_transparent.png" alt="logo picture for header" id="moalogo" width="650">
-    </div>
-
-    <div class="details">
-        <h2 class="hidden">details</h2>
-
-        <div class="potImg">
-            <h2 class="hidden">Pot Image</h2>
-            <a href="images/cindy_pot.usdz" rel="ar">
-                <img src="images/cindy_pot2.png" alt="cindy's pot image" width="800" height="800">
-            </a>
+            <!-- hamburger -->
+            <div class="burger">
+                <!-- burger lines -->
+                <div class="line1"></div>
+                <div class=line2></div>
+            </div>
         </div>
 
-        <div class="potSize">
-            <h2 class="hidden">Pot Size</h2>
+        <div class="logoWrapper">
+            <h2 class="hidden">Logo</h2>
+            <img src="images/moalogo_final_transparent.png" alt="logo picture for header" id="moalogo" width="650">
+        </div>
 
-            <div class="circle">
+        <div class="details">
+            <h2 class="hidden">details</h2>
 
-                <section class="vertLine">
-                    <h2 class="hidden">Verticle Line Line</h2>
-                </section>
+            <div class="potImg">
+                <h2 class="hidden">Pot Image</h2>
+                <a href="images/cindy_pot.usdz" rel="ar">
+                    <img src="images/cindy_pot2.png" alt="cindy's pot image" width="800" height="800">
+                </a>
+            </div>
 
-                <section class="circ">
-                    <h2 class="hidden">Circle</h2>
-                </section>
+            <div class="potSize">
+                <h2 class="hidden">Pot Size</h2>
+
+                <div class="circle">
+
+                    <section class="vertLine">
+                        <h2 class="hidden">Verticle Line Line</h2>
+                    </section>
+
+                    <section class="circ">
+                        <h2 class="hidden">Circle</h2>
+                    </section>
+
+                </div>
+
+                <p>
+                    Lorem Ipsum is simply dummy text of the.
+                </p>
+
 
             </div>
 
-            <p>
-                Lorem Ipsum is simply dummy text of the.
-            </p>
+            <div class="potInfo">
+                <h2>Cooking pot<br> Point Peninsula culture</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                </p>
+            </div>
 
+            <div class="potInfo_2">
+                <h2 class="hidden">Pot Information Paragraph 2</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <section class="img_1">
+                    <h2 class="hidden">Image 1</h2>
+                </section>
+            </div>
 
-        </div>
+            <div class="potInfo_3">
+                <h2 class="hidden">Pot Information Paragraph 3</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book.
+                </p>
+                <section class="img_2">
+                    <h2 class="hidden">Image 2</h2>
+                </section>
+            </div>
 
-        <div class="potInfo">
-            <h2>Cooking pot<br> Point Peninsula culture</h2>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
-        </div>
-
-        <div class="potInfo_2">
-            <h2 class="hidden">Pot Information Paragraph 2</h2>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </p>
-            <section class="img_1">
-                <h2 class="hidden">Image 1</h2>
-            </section>
-        </div>
-
-        <div class="potInfo_3">
-            <h2 class="hidden">Pot Information Paragraph 3</h2>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-            </p>
-            <section class="img_2">
-                <h2 class="hidden">Image 2</h2>
-            </section>
-        </div>
-
-        <!--<div class="potInfo_4">
+            <!--<div class="potInfo_4">
             <h2 class="hidden">Pot Information Paragraph 4</h2>
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -103,14 +109,14 @@
             </section>
         </div>-->
 
+        </div>
+
+        <footer>
+            <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
+        </footer>
     </div>
-
-    <footer>
-        <small>&copy; Copyright 2020,<br> Museum of Ontario Archaeology</small>
-    </footer>
-
     <script src="js/ScrollMagic.min.js"></script>
-    <script src="js/scrollmagic.js"></script> 
+    <script src="js/scrollmagic.js"></script>
     <script src="js/main.js"></script>
     <script src="js/functionality.js"></script>
 </body>
