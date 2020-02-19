@@ -1,13 +1,23 @@
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
+  
+}
+
+.mainContainer
+{
+    overflow-x: hidden;
     max-width: 812px;
     margin: 0 auto;
     position: relative;
-    /* padding: 20px; */
-    /* align-items: center; */
-    text-align: center;
-    /* size: 100%; */
 }
 
 #githubLink {
@@ -20,6 +30,11 @@ body {
 h1 {
     margin: 10px 0;
     font-size: 40px;
+}
+
+p
+{
+    line-height: 50px;
 }
 
 #loadingMessage {
@@ -52,56 +67,6 @@ h1 {
     display: none;
 }
 
-#mainNav ul {
-    display: none;
-    margin-top: 30px;
-    background-position: right top;
-}
-
-#mainNav button {
-    background: url(../images/burger.svg) center no-repeat;
-    background-position: right top;
-    width: 30px;
-    height: 15px;
-    transition: all 400ms ease;
-    border: 0;
-    margin: 10px;
-    margin-left: 760px;
-    margin-top: 30px;
-}
-
-#mainNav ul.slideToggle {
-    display: block;
-    font-size: 24px;
-}
-
-#mainNav button.expanded {
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-#mainNav li a {
-    background-color: #fff;
-    display: block;
-    padding: 10px 0 10px 0;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-}
-
-#mainNav li {
-    border-bottom: 1px solid #333;
-}
-
-#mainNav li:last-child {
-    margin-bottom: 20px;
-}
-
-#mainNav li:first-child {
-    border-top: 1px solid #333;
-}
 
 .details {
     margin-left: -80px;
@@ -109,55 +74,6 @@ h1 {
 
 .logoWrapper {
     margin-left: 20px;
-}
-
-#mainNav ul {
-    display: none;
-    margin-top: 30px;
-    background-position: right top;
-}
-
-#mainNav button {
-    background: url(../images/burger.svg) center no-repeat;
-    background-position: right top;
-    width: 30px;
-    height: 30px;
-    transition: all 400ms ease;
-    border: 0;
-    margin: 20px;
-    margin-left: 760px;
-}
-
-#mainNav ul.slideToggle {
-    display: block;
-}
-
-#mainNav button.expanded {
-    -webkit-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-
-#mainNav li a {
-    background-color: #fff;
-    display: block;
-    padding: 10px 0 10px 0;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-}
-
-#mainNav li {
-    border-bottom: 1px solid #333;
-}
-
-#mainNav li:last-child {
-    margin-bottom: 20px;
-}
-
-#mainNav li:first-child {
-    border-top: 1px solid #333;
 }
 
 .logoWrapper {
@@ -229,12 +145,11 @@ h1 {
 }
 
 .potSize p {
-    font-family: 'Roboto', sans-serif;
     text-align: center;
+    font-weight: 400;
     margin-top: 100px;
     margin-bottom: 40px;
-    font-size: 35px;
-    line-height: 45px;
+    font-size: 1rem;
     margin-left: 80px;
     transition: all 2s ease;
     -moz-transition: all 2s ease;
@@ -270,25 +185,22 @@ h1 {
 }
 
 .potInfo h2 {
-    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    line-height: 5rem;
+    font-weight: 600;
     text-align: center;
     margin-bottom: 40px;
-    font-size: 3vw;
-    font-weight: bold;
-    line-height: 45px;
-    margin-left: 90px;
 }
 
 .potInfo p {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 40px;
-    font-size: 35px;
-    /* font-weight: bold; */
-    line-height: 65px;
     width: 80%;
+    margin-top: 100px;
+    font-size: 35px;
+    font-weight: 400;   
+    line-height: 5rem;
     margin-left: 15%;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .potInfo_2 {
@@ -298,15 +210,14 @@ h1 {
 }
 
 .potInfo_2 p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 40px;
-    line-height: 55px;
-    width: 500px;
+    
+    width: 55%;
     height: 197px;
+    font-size: 3rem;
+    line-height: 5rem;
+    font-weight: 400;
     margin-top: 200px;
     margin-bottom: -500px;
-    margin-left: 8vw;
-    /* margin-right: -200px; */
     transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -353,16 +264,14 @@ h1 {
 }
 
 .potInfo_3 p {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    /* margin-top: 200px; */
-    margin-bottom: -700px;
-    font-size: 35px;
-    /* font-weight: bold; */
-    line-height: 65px;
-    /* font-weight: 2px; */
     width: 80%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 5rem;
+    margin-bottom: -700px;
     margin-left: 5.5vw;
+    /* margin-top: 200px; */
     color: white;
     transition: all 2s ease;
     -moz-transition: all 1s ease;
@@ -436,18 +345,131 @@ h1 {
 }*/
 
 footer {
-    margin: 0 auto;
-    width: 100%;
-    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 8vh;
     margin-top: 15vh;
     text-align: center;
+    border-top: solid 1px black;
     bottom: 0;
 }
 
 footer small {
     color: black;
-    font-size: 25px;
+    font-size: 2rem;
+}
+
+/* New Hamburger CSS */
+
+.nav
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    min-height: 8vh;
+}
+
+.nav-links
+{
+	display: none;
+	position: absolute;
+	left: 0px;
+	width: 60%;
+	justify-content: space-around;
+}
+
+.nav-links li 
+{
+	list-style: none;
+	text-transform: uppercase;
+}
+
+/* hamburger text size */
+.nav-links a
+{
+	letter-spacing: 1.5px;
+	text-decoration: none;
+	color: white;
+	font-size: 3rem;
+
+}
+
+/* hide the burger in tablet */
+.burger
+{
+	cursor: pointer;
+}
+
+/* hambruger lines */
+.burger div
+{
+	width: 50px;
+	height: 4px;
+	margin: 7px;
+	background-color: black;
+}
+
+
+/*  hamburger menu styling/posisioning */
+.nav-links
+{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top:8vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* move the container off the screen */
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+}
+
+/* hide the nav link before the slide out */
+.nav-links li 
+{
+    opacity: 0;
+}
+
+.burger
+{
+    display: block;
+    position: absolute;
+    right: 0px;
+    margin-right: 40px;
 }
 
 
 
+.nav-active
+{
+    transform: translateX(0)
+}
+
+@keyframes navLinkFade
+{
+    from
+    {
+        opacity: 0;
+        transform: translateX(50px)
+    }
+    to
+    {
+        opacity: 1;
+        transform: translateX(0px)
+
+    }
+}
+
+.toggle .line1
+{
+    transform: rotate(-45deg translateX(-5px,6px));
+}
+
+.toggle .line2
+{
+    transform: rotate(45deg translateX(-5px,-6px));
+}
