@@ -16,6 +16,7 @@ body {
 {
     overflow-x: hidden;
     max-width: 812px;
+    margin-top: 20px;
     margin: 0 auto;
     position: relative;
 }
