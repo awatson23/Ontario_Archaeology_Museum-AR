@@ -14,7 +14,6 @@ body {
 .mainContainer
 {
     overflow-x: hidden;
-    max-width: 812px;
     margin-top: 20px;
     margin: 0 auto;
     position: relative;
@@ -68,10 +67,6 @@ p
 }
 
 
-.details {
-    margin-left: -80px;
-}
-
 .logoWrapper {
     margin-left: 20px;
 }
@@ -96,13 +91,13 @@ p
     height: 800px;
     /* background-color: rgb(184, 184, 184); */
     margin-top: 10vh;
-    margin-left: 88px;
+    margin: 0 auto;
 }
 
 .circle {
     display: flex;
     flex-direction: row;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 .circ {
@@ -113,7 +108,6 @@ p
     width: 400px;
     background-color: rgb(128, 128, 128);
     border-radius: 50%;
-    margin-left: 15%;
     margin-top: 200px;
     /* margin-bottom: 100px; */
     opacity: 1;
@@ -132,8 +126,8 @@ p
     height: 0px;
     width: 3px;
     margin-top: 350px;
-    margin-left: 170px;
-    margin-right: 30px;
+    margin-left: 12%;
+    margin-right: 15%;
     transition: all 1.5s ease;
     -moz-transition: all 1.5s ease;
     -ms-transition: all 1.5s ease;
@@ -152,9 +146,9 @@ p
 }
 
 .measure {
-    width: 20px;
-    margin-left: 50px;
-    margin-top: 29%;
+    width: 3%;
+    margin-left: 12%;
+    margin-top: 35%;
 }
 
 .potSize {
@@ -165,11 +159,11 @@ p
 .potSize p {
     text-align: center;
     font-weight: 400;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 40px;
     font-size: 2rem;
     line-height: 4.5rem;
-    margin-left: 80px;
+    margin: 0 auto;
     transition: all 2s ease;
     -moz-transition: all 2s ease;
     -ms-transition: all 2s ease;
@@ -217,7 +211,7 @@ p
     font-size: 35px;
     font-weight: 400;   
     line-height: 5rem;
-    margin-left: 15%;
+    margin: 0 auto;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -229,14 +223,12 @@ p
 }
 
 .potInfo_2 p {
-    
     width: 55%;
     height: 197px;
     font-size: 3rem;
     line-height: 5rem;
     font-weight: 400;
-    margin-top: 200px;
-    margin-bottom: -500px;
+    margin-bottom: -50%;
     transition: all 1s ease;
     -moz-transition: all 1s ease;
     -ms-transition: all 1s ease;
@@ -250,7 +242,7 @@ p
 
 .potInfo_2 p.textimg1-anim {
     opacity: 1;
-    transform: translateX(35%)
+    transform: translateX(22%)
 }
 
 .img_1 {
@@ -283,13 +275,15 @@ p
 }
 
 .potInfo_3 p {
+    position: absolute;
     width: 80%;
     text-align: center;
     font-weight: 400;
+    margin: 0 auto;
     font-size: 2rem;
     line-height: 5rem;
-    margin-bottom: -700px;
-    margin-left: 5.5vw;
+    margin-top: 25%;
+    margin-left: 10%;
     /* margin-top: 200px; */
     color: white;
     transition: all 2s ease;
@@ -307,11 +301,6 @@ p
     opacity: 1;
 }
 
-.potInfo_3 p.textimg2-anim {
-    opacity: 1;
-    transform: translateX(10%)
-}
-
 .img_2 {
     position: relative;
     width: 100%;
@@ -327,7 +316,6 @@ p
     -moz-transition-delay: 1s;
     -ms-transition-delay: 1s;
     -o-transition-delay: 1s;
-    position: relative;
     z-index: -1;
 }
 
@@ -377,6 +365,7 @@ footer {
 footer small {
     color: black;
     font-size: 2rem;
+    margin: 0 auto;
 }
 
 /* New Hamburger CSS */
