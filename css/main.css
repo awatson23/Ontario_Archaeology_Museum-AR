@@ -167,7 +167,8 @@ p
     font-weight: 400;
     margin-top: 100px;
     margin-bottom: 40px;
-    font-size: 1rem;
+    font-size: 2rem;
+    line-height: 4.5rem;
     margin-left: 80px;
     transition: all 2s ease;
     -moz-transition: all 2s ease;
@@ -203,7 +204,7 @@ p
 }
 
 .potInfo h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 5rem;
     font-weight: 600;
     text-align: center;
