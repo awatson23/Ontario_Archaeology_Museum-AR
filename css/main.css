@@ -8,8 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #333;
-  
+    color: #333;  
 }
 
 .mainContainer
@@ -117,7 +116,7 @@ p
     margin-left: 15%;
     margin-top: 200px;
     /* margin-bottom: 100px; */
-    opacity: 0;
+    opacity: 1;
     transition: all 1.5s ease;
     -moz-transition: all 1.5s ease;
     -ms-transition: all 1.5s ease;
@@ -128,19 +127,34 @@ p
     -o-transition-delay: .5s;
 }
 
-.circ.scroll-anim {
-    opacity: 1;
-    transform: translateX(-20%);
-}
 
 .vertLine {
-    height: 400px;
+    height: 0px;
     width: 3px;
-    margin-top: 200px;
+    margin-top: 350px;
     margin-left: 170px;
-    margin-right: 150px;
+    margin-right: 30px;
+    transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -ms-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -ms-transition-delay: .5s;
+    -o-transition-delay: .5s;
     /* margin-right: 200px; */
     background-color: rgb(0, 0, 0);
+}
+
+.vertLine.scroll-anim {
+    margin-top: 200px;
+    height: 400px;
+}
+
+.measure {
+    width: 20px;
+    margin-left: 50px;
+    margin-top: 29%;
 }
 
 .potSize {
