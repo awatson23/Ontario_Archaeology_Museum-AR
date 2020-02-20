@@ -1,12 +1,5 @@
 var controller = new ScrollMagic.Controller();
 
-var scrolldetail1 = new ScrollMagic.Scene({
-    triggerElement: '.circ',
-    triggerHook: .7,
-    reverse: true
-     })
-    .setClassToggle('.circ', 'scroll-anim')
-    .addTo(controller);
 
 
 // slide in image animation
@@ -17,7 +10,17 @@ var scrollimage1 = new ScrollMagic.Scene({
     reverse: true
      })
      .setClassToggle('.img_1', 'scroll-img1')
-     .addTo(controller);    
+     .addTo(controller);   
+     
+//measurement line animation
+
+var lineAnimation = new ScrollMagic.Scene({
+    triggerElement: '.vertLine',
+    triggerHook: .8,
+    reverse: true
+     })
+     .setClassToggle('.vertLine', 'scroll-anim')
+     .addTo(controller);  
 
 
 // text Animation potinfo2
