@@ -13,6 +13,7 @@ body {
 
 .mainContainer
 {
+    max-width: 850px;
     overflow-x: hidden;
     margin-top: 20px;
     margin: 0 auto;
