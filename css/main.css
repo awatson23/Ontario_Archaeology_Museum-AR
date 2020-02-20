@@ -95,7 +95,7 @@ p
 .potImg {
     width: 800px;
     height: 800px;
-    background-color: rgb(184, 184, 184);
+    /* background-color: rgb(184, 184, 184); */
     margin-top: 10vh;
     margin-left: 88px;
 }
@@ -107,6 +107,9 @@ p
 }
 
 .circ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 400px;
     width: 400px;
     background-color: rgb(128, 128, 128);
@@ -392,7 +395,8 @@ footer small {
 	letter-spacing: 1.5px;
 	text-decoration: none;
 	color: white;
-	font-size: 3rem;
+    font-size: 3rem;
+    font-weight: 100;
 
 }
 
