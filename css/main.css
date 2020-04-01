@@ -521,9 +521,10 @@ footer small {
 }
 
 /* make text strong */
-strong {
+strong 
+{
     font-weight: bold;
- }
+}
 
  /* qr code instruction */
 .qr-instruction
