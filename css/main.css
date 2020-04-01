@@ -13,7 +13,7 @@ body {
 
 .mainContainer
 {
-    overflow-x: hidden;
+    overflow: hidden;
     margin-top: 20px;
     margin: 0 auto;
     position: relative;
@@ -88,11 +88,18 @@ p
 }
 
 .potImg {
-    width: 800px;
-    height: 800px;
+ /*   width: 800px;
+    height: 800px;*/
+    max-width: 100%;
     /* background-color: rgb(184, 184, 184); */
     margin-top: 10vh;
     margin: 0 auto;
+}
+
+.potImg img {
+
+    max-width: 100%;
+
 }
 
 .circle {
@@ -567,8 +574,7 @@ strong
 }
 
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+/*@media only screen and (max-width: 768px) {
     .mainContainer 
     {
         width: 850px;
@@ -580,4 +586,4 @@ strong
         margin-left: 12%;
         margin-top: 26%;
     }
-  }
+  }*/
