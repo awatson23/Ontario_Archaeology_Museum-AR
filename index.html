@@ -3,11 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="hidden">Museum of Ontario Archaeology - AR App</title>
     <script src="js/jsQR.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="images/flavicon-moalogo.png" type="image/gif" sizes="16x16">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
@@ -37,13 +38,13 @@
         <!-- This is the logo section with wrapper  -->
         <div class="logoWrapper">
             <h2 class="hidden">Logo Section</h2>
-            <img src="images/moalogo_final_transparent.png" alt="logo picture for header" id="moalogo">
+            <img src="images/moalogo_final_transparent.png" alt="logo picture for header" id="moalogo" width="650">
         </div>
 
         <h1 class="hidden"> Museum of Ontario Archaeology - AR section</h1>
         <!-- Camera Reader -->
         <div id="loadingMessage" hidden="">⌛ Loading video...</div>
-        <canvas id="canvas"></canvas>
+        <canvas id="canvas" height="480" width="640"></canvas>
         <!-- Camera Reader -->
 
         <!-- Footer -->
@@ -55,16 +56,16 @@
             <section>
                 <h2 class="hidden">Instruction</h2>
                 <h3 class="instruction-title">User Manual</h3>
+                <p> </p>
             </section>
-            <!-- image -->
             <div>
                 <img src="images/moa-instuction-icons.svg" alt="moa instruction icons">
             </div>
         </section>
-        <footer>
-            <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
-        </footer>
     </div>
+    <footer>
+        <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
+    </footer>
 
 
     <script src="js/main.js"></script>

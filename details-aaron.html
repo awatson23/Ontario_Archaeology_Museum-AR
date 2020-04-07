@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museum of Ontario Archaeology - AR App</title>
     <script src="js/jsQR.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap"
@@ -17,9 +17,9 @@
     <div class="mainContainer">
         <!-- Main Navigation -->
         <div class="nav">
-            <h2 class="hidden">Main Navigator</h2>
+            <h1 class="hidden">Main Navigator</h1>
             <ul class="nav-links">
-                <li><a href="#">home</a></li>
+                <li><a href="index.html">home</a></li>
                 <li><a href="longhouse.html">longhouse history</a></li>
                 <li><a href="about.html">about us</a></li>
                 <li><a href="supportus.html">support us</a></li>
@@ -32,108 +32,87 @@
                 <div class=line2></div>
             </div>
         </div>
-
+        <!-- artifact content container -->
         <div class="logoWrapper">
             <h2 class="hidden">Logo</h2>
             <img src="images/moalogo_final_transparent.png" alt="logo picture for header" id="moalogo" width="650">
         </div>
-
-        <div class="details">
-            <h2 class="hidden">details</h2>
-
-            <div class="potImg">
-                <h2 class="hidden">Pot Image</h2>
-                <a href="images/paterson_aaron_mohawk.usdz" rel="ar">
-                    <img src="images/mohawk-gltz_file.png" alt="mohawk pot">
-                </a>
-            </div>
-            <div class="potSize">
-                <div class="itemTitle">
-                    <h3>Mohawk Pot</h3>
+        <!-- artifact featured content -->
+        <section class="artifact-ar-image">
+            <h2 class="hidden">Artifact Featured Content</h2>
+            <img src="images/mohawk-isometric-1.png" alt="Image of an artifact">
+        </section>
+        <!-- artifact introduction -->
+        <section class="artifact-introduction">
+            <h2 class="hidden">Artifact Introduction</h2>
+            <h3>Artifact Title - Introduction</h3>
+            <!-- Size -->
+            <div class="artifact-size-parent">
+                <!-- size detail -->
+                <div class="measure">
+                    <p>49cm</p>
                 </div>
-                <h2 class="hidden">Pot Size</h2>
-
-                <div class="circle">
-
-                    <div class="measure">
-                        <p>49cm</p>
-                    </div>
-
-                    <section class="vertLine">
-                        <h2 class="hidden">Verticle Line Line</h2>
-                    </section>
-
-                    <section class="circ">
-                        <h2 class="hidden">Circle</h2>
-                        <img src="images/mohawk-front.png" alt="frontal mohawk pot image">
-
-                    </section>
-
+                <div class="artifact-vertical-line">
+                    <!-- keyline -->
                 </div>
-
-                <p>
-                    <strong>Period:</strong> 1973<br>
-                    Pot, Mohawk, Southern Ontario <br><strong>Maker:</strong> Elda Smith
-                    <br><strong>Material:</strong> Clay
-                </p>
-
-
-            </div>
-
-            <div class="potInfo">
-                <h2>FIRST PEOPLES OF CANADA</h2>
-                <p>
-                    “June is National Aboriginal History Month in Canada. To Celebrate the heritage, cultures and
-                    contributions of First Nations, Métis and Inuit. As we reflect upon the past, present and future, to
-                    raise awareness, and knowledge to foster dialogue. To mark history of the first people we created
-                    this AR artifact form the Great Lakes Collection.”<br>- Canadian Museum of History, 2016,<br>
-                    Jean-Luc Pilon
-                </p>
-            </div>
-
-            <div class="potInfo_2">
-                <h2 class="hidden">Pot Information Paragraph 2</h2>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                </p>
-                <section class="img_1">
-                    <h2 class="hidden">Image 1</h2>
-                    <img src="images/mohawk-isometric-3.png" alt="titled angle of the mohawk pot">
-                </section>
-            </div>
-
-            <div class="potInfo_3">
-                <h2 class="hidden">Pot Information Paragraph 3</h2>
-                <div class="detailedFeature">
-                    <img class="detailedImage" src="images/mohawk-isometric-3.png" alt="titled mohawk pot">
+                <div class="artifact-dimension-image">
+                    <img src="images/mohawk-isometric-3.png" alt="Image of an artifact">
                 </div>
-                <p>
-                    "My work is based on acknowledging people. Every piece has a written explanation that I allude to
-                    that person no matter what their religion or background is; I allude to the goodness of them. People
-                    like that because it is personal … so the philosophy is one of recognition to an individual."
-                    <br>—Steve Smith (Mohawk), Talking Earth Pottery1
-                </p>
-                <section class="img_2">
-                    <h2 class="hidden">Image 2</h2>
-                </section>
             </div>
-
-            <!--<div class="potInfo_4">
-                    <h2 class="hidden">Pot Information Paragraph 4</h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    </p>
-                    <section class="img_3">
-                        <h2 class="hidden">Image 3</h2>
-                    </section>
-                </div>-->
-
-        </div>
-
-        <footer>
-            <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
-        </footer>
+            <!-- desciption -->
+            <div class="artifact-introduction-description">
+                <p><strong>Period:</strong> 1900</p>
+                <p><strong>Maker:</strong> Bruce Wayne</p>
+                <p><strong>Material:</strong> Clay</p>
+            </div>
+        </section>
+        <!-- 2 -->
+        <section class="artifact-origins-story">
+            <h2 class="hidden">Artifact Origin Story</h2>
+            <div>
+                <h3>Artifact title here</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos odit optio obcaecati incidunt ipsum, a
+                    voluptatum eum assumenda velit perferendis? Ad, quos. Aperiam neque molestiae ut facilis.
+                    Quae,labore delectus.
+                </p>
+            </div>
+        </section>
+        <!-- 3 -->
+        <section class="artifact-feature-content">
+            <h2 class="hidden">Artifact Feature Content</h2>
+            <h3 class="feature-title">Amazing Title Here</h3>
+            <div class="artifact-size-image">
+                <img src="images/mohawk-isometric-1.png" alt="Image of an artifact">
+            </div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos odit optio obcaecati incidunt ipsum, a
+                voluptatum eum assumenda velit perferendis? Ad, quos. Aperiam neque molestiae ut facilis. Quae,labore
+                delectus.
+            </p>
+        </section>
+        <!-- 4 -->
+        <section class="artifact-feature-content-magnify">
+            <h2 class="hidden">Artifact Feature Content</h2>
+            <h3 class="feature-title">Amazing Title Here</h3>
+            <div class="artifact-size-image">
+                <img src="images/mohawk-isometric-1.png" alt="Image of an artifact">
+            </div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos odit optio obcaecati incidunt ipsum, a
+                voluptatum eum assumenda velit perferendis? Ad, quos. Aperiam neque molestiae ut facilis. Quae,labore
+                delectus.
+            </p>
+        </section>
+        <!-- 5 -->
+        <section>
+            <h2 class="hidden">Artifact Featue Content</h2>
+        </section>
     </div>
+    <!-- footer -->
+    <footer>
+        <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
+    </footer>
 
     <script src="js/ScrollMagic.min.js"></script>
     <script src="js/scrollmagic.js"></script>
