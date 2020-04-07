@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="hidden">Museum of Ontario Archaeology - AR App</title>
     <script src="js/jsQR.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap"
         rel="stylesheet">
+    <link rel="icon" href="images/flavicon-moalogo.png" type="image/gif" sizes="16x16">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
@@ -50,11 +52,20 @@
             <div id="outputMessage">No QR code detected.</div>
             <div hidden=""><b>Data:</b><span id="outputData"></span></div>
         </div>
-
-        <footer>
-            <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
-        </footer>
+        <section class="qr-instruction">
+            <section>
+                <h2 class="hidden">Instruction</h2>
+                <h3 class="instruction-title">User Manual</h3>
+                <p> </p>
+            </section>
+            <div>
+                <img src="images/moa-instuction-icons.svg" alt="moa instruction icons">
+            </div>
+        </section>
     </div>
+    <footer>
+        <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
+    </footer>
 
 
     <script src="js/main.js"></script>

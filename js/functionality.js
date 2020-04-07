@@ -1,20 +1,3 @@
-// (function(){
-//     "use strict";	
-//     console.log("fired");
-//     var button = document.querySelector("#button");
-//     var burgerMenu = document.querySelector("#burgerMenu");
-  
-//   function hamburgerMenu() {
-//     burgerMenu.classList.toggle("slideToggle");
-//     button.classList.toggle("expanded");
-//   }
-  
-//   button.addEventListener("click", hamburgerMenu, false);
-      
-//   })();
-  
-
-// Hello
 // CONSOLE LOG TEST…
 console.log('FIRING CYLINDERS');
 
@@ -35,7 +18,7 @@ const navSlide = () => {
         navLinks.forEach((link, index) => {
             // Run a function…with a delay of 0.3
             if (link.style.animation) {
-                link.stlye.animation = '';
+                link.style.animation = '';
             } else {
                 link.style.animation = `navLinkFade 0.3s ease forwards ${index / 7 + 0.3}s`;
             }
