@@ -307,9 +307,14 @@ h3 {
 
 .artifact-vertical-line {
     width: 2px;
-    height: 210px;
+    height: 0px;
     background-color: black;
     margin: 5px auto;
+    transition: all .5s ease;
+}
+
+.artifact-vertical-line.scroll-anim {
+    height: 200px;
 }
 
 /* artifact origin story */
@@ -317,6 +322,7 @@ h3 {
 .artifact-origins-story {
     display: flex;
     justify-content: center;
+    margin-top: 15vh;
 }
 
 .artifact-origins-story>div {
@@ -352,6 +358,7 @@ h3 {
     margin-bottom: 60px;
     text-align: center;
 }
+
 /* section magnify 4 & 5 */
 .artifact-feature-content-magnify {
     display: flex;
@@ -403,5 +410,17 @@ footer small {
 
 @media only screen and (min-width: 768px) {
     /* For tablet + Size */
+    .artifact-dimension-image img {
+        width: 350px;
+        height: 350px;
+    }
+      
+    .artifact-vertical-line.scroll-anim {
+        height: 320px;
+    }
+
+    .artifact-size-parent {
+        padding: 45px;
+    }
 
 }
