@@ -381,6 +381,77 @@ h3 {
     height: auto;
     overflow: hidden;
 }
+/* support page */
+
+.support-us-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+.support-us-content h3 {
+    font-size: 7vw;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.support-us-content p {
+    font-size: 3vw;
+    line-height: 6vw;
+    margin-bottom: 20px;
+}
+/*  lawson site */
+
+.lawson-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+.lawson-site h3 {
+    font-size: 7vw;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.lawson-site p {
+    font-size: 3vw;
+    line-height: 6vw;
+    margin-bottom: 20px;
+}
+
+/* about us page */
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    
+}
+
+.about-us h3 {
+    font-size: 7vw;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.about-us p {
+    font-size: 3vw;
+    line-height: 6vw;
+    margin-bottom: 20px;
+}
+
 
 footer {
     display: flex;
