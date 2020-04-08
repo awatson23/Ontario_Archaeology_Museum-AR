@@ -429,7 +429,24 @@ h3 {
 }
 
 /* about us page */
+.about-us-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
 
+.about-us-video iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 .about-us {
     display: flex;
     flex-direction: column;
