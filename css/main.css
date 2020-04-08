@@ -382,6 +382,113 @@ h3 {
     overflow: hidden;
 }
 
+/* support page */
+
+.support-us-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.support-us-content h3 {
+    font-size: 7vw;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.support-us-content p {
+    font-size: 4vw;
+    line-height: 8vw;
+    margin-bottom: 20px;
+}
+
+/*  lawson site */
+
+.lawson-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.lawson-site h3 {
+    font-size: 7vw;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.lawson-site p {
+    font-size: 4vw;
+    line-height: 8vw;
+    margin-bottom: 20px;
+}
+
+/* about us page */
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.about-us h3 {
+    font-size: 7vw;
+    margin-bottom: 30px;
+    margin-top: 60px;
+}
+
+.about-us p {
+    font-size: 4vw;
+    line-height: 8vw;
+    margin-bottom: 20px;
+}
+
+.lawson-site-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.lawson-site-video iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.lawson-site h4 {
+    font-size: 5vw;
+    line-height: 7vw;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.lawson-site ul {
+    font-size: 2vw;
+    font-weight: 300;
+    line-height: 5vw;
+    list-style-type:disc;
+}
+
+.lawson-site ul li{
+ text-decoration: dotted;
+ margin-bottom: 10px;
+}
+
 footer {
     display: flex;
     align-items: center;
@@ -420,5 +527,8 @@ footer small {
     }
     .artifact-size-parent {
         padding: 45px;
+    }
+    .lawson-site-video iframe {
+        max-width: 100%;
     }
 }
