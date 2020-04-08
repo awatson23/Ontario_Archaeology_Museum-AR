@@ -303,15 +303,6 @@ h3 {
     margin-top: 30px;
     width: 70%;
     height: 70%;
-<<<<<<< HEAD
-}
-
-.artifact-vertical-line {
-    width: 2px;
-    height: 210px;
-    background-color: black;
-    margin: 5px auto;
-=======
 }
 
 .artifact-vertical-line {
@@ -324,7 +315,6 @@ h3 {
 
 .artifact-vertical-line.scroll-anim {
     height: 200px;
->>>>>>> 768bb645b38f1a356362c18091d0ac53741332e5
 }
 
 /* artifact origin story */
@@ -332,10 +322,7 @@ h3 {
 .artifact-origins-story {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-=======
     margin-top: 15vh;
->>>>>>> 768bb645b38f1a356362c18091d0ac53741332e5
 }
 
 .artifact-origins-story>div {
@@ -362,17 +349,6 @@ h3 {
     display: flex;
     align-items: center;
     margin-bottom: 100px;
-<<<<<<< HEAD
-}
-
-.artifact-feature-content p {
-    width: 80%;
-    font-size: 4vw;
-    line-height: 8vw;
-    margin-bottom: 60px;
-    text-align: center;
-}
-=======
 }
 
 .artifact-feature-content p {
@@ -383,8 +359,8 @@ h3 {
     text-align: center;
 }
 
->>>>>>> 768bb645b38f1a356362c18091d0ac53741332e5
 /* section magnify 4 & 5 */
+
 .artifact-feature-content-magnify {
     display: flex;
     flex-direction: column;
@@ -424,19 +400,6 @@ footer small {
 }
 
 /******************************************/
-<<<<<<< HEAD
-
-/******************************************/
-
-/*************MEDIA QUERIES***************/
-
-/******************************************/
-
-/******************************************/
-
-@media only screen and (min-width: 768px) {
-    /* For tablet + Size */
-=======
 
 /******************************************/
 
@@ -452,14 +415,10 @@ footer small {
         width: 350px;
         height: 350px;
     }
-      
     .artifact-vertical-line.scroll-anim {
         height: 320px;
     }
-
     .artifact-size-parent {
         padding: 45px;
     }
->>>>>>> 768bb645b38f1a356362c18091d0ac53741332e5
-
 }
