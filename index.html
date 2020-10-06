@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="hidden">Museum of Ontario Archaeology - AR App</title>
-    <!-- <script src="js/jsQR.js"></script> -->
-    <script src="js/jsqrscanner.nocache.js"></script>
+    <script src="js/jsQR.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/flavicon-moalogo.png" type="image/gif" sizes="16x16">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -60,47 +59,8 @@
 
         <h1 class="hidden"> Museum of Ontario Archaeology - AR section</h1>
         <!-- Camera Reader -->
-        <!-- <div id="loadingMessage" hidden="">⌛ Loading video...</div>
-        <canvas id="canvas" height="480" width="640"></canvas> -->
-        <h1>JsQRScanner example</h1>
-      <div class="row-element">
-        <div class="FlexPanel detailsPanel QRScannerShort">
-          <div class="FlexPanel shortInfoPanel">
-            <div class="gwt-HTML">
-              Point the webcam to a QR code.
-            </div>
-          </div>
-        </div>
-      </div>
-      <br>
-      <div class="row-element">
-        <div class="qrscanner" id="scanner">
-        </div>
-      </div>
-      <div class="row-element">
-        <div class="form-field form-field-memo">
-          <div class="form-field-caption-panel">
-            <div class="gwt-Label form-field-caption">
-              Scanned text
-            </div>
-          </div>
-          <div class="FlexPanel form-field-input-panel">
-            <textarea id="scannedTextMemo" class="textInput form-memo form-field-input textInput-readonly" rows="3" readonly>
-            </textarea>
-          </div>
-        </div>
-        <div class="form-field form-field-memo">
-          <div class="form-field-caption-panel">
-            <div class="gwt-Label form-field-caption">
-              Scanned text history
-            </div>
-          </div>
-          <div class="FlexPanel form-field-input-panel">
-            <textarea id="scannedTextMemoHist" class="textInput form-memo form-field-input textInput-readonly" value="" rows="6" readonly>
-            </textarea>
-          </div>
-        </div>
-      </div>
+        <div id="loadingMessage" hidden="">⌛ Loading video...</div>
+        <canvas id="canvas" height="480" width="640"></canvas>
         <!-- Camera Reader -->
 
         <!-- Footer -->
@@ -123,15 +83,14 @@
         <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
     </footer>
 
-    <!-- <script>
+    <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
                 navigator.serviceWorker.register('/sw.js')
             })
         }
-    </script> -->
-    <!-- <script src="js/main.js"></script> -->
-    <script src="js/qr.js"></script>
+    </script>
+    <script src="js/main.js"></script>
     <script src="js/functionality.js"></script>
 </body>
 
