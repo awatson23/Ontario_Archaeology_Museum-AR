@@ -432,9 +432,12 @@ h3 {
 .ARContainer {
     display: flex;
     align-items: center;
-    justify-content: center; 
-    max-width: 100%;   
+    justify-content: center;
 }
+
+.ARContainer img {
+    max-width: 100%;
+} 
 
 /* about us page */
 .about-us-video {
