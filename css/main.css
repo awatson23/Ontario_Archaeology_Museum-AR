@@ -429,6 +429,13 @@ h3 {
     margin-bottom: 20px;
 }
 
+.ARContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    max-width: 100%;   
+}
+
 /* about us page */
 .about-us-video {
     display: flex;
