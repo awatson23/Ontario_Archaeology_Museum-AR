@@ -146,7 +146,7 @@ h3 {
     align-items: center;
     border-bottom: 1px solid #333;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .logoWrapper img {
@@ -157,32 +157,38 @@ h3 {
 
 /* index page */
 
-#loadingMessage {
-    text-align: center;
-    padding: 40px;
-    background-color: #eee;
+#scanner video
+{
+    max-width: 60%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
 }
 
-#canvas {
-    width: 100%;
-}
-
-#output {
+#scannedTextMemo {
     margin-top: 20px;
     background: #eee;
     padding: 10px;
-    padding-bottom: 0;
-}
-
-#output div {
-    padding-bottom: 10px;
-    word-wrap: break-word;
-}
-
-#noQRFound {
     text-align: center;
 }
 
+#restartCamera {
+    display: block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 10px auto 0 auto;
+    text-decoration: none;
+    background: #f89921;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
 /* qr code instruction */
 
 .qr-instruction {
@@ -190,7 +196,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-content: space-around;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .qr-instruction section {
