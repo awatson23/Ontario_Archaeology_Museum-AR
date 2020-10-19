@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="hidden">Museum of Ontario Archaeology - AR App</title>
-    <script src="js/jsQR.js"></script>
+    <script src="js/jsqrscanner.nocache.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/flavicon-moalogo.png" type="image/gif" sizes="16x16">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -58,16 +58,16 @@
         </div>
 
         <h1 class="hidden"> Museum of Ontario Archaeology - AR section</h1>
-        <!-- Camera Reader -->
-        <div id="loadingMessage" hidden="">⌛ Loading video...</div>
-        <canvas id="canvas" height="480" width="640"></canvas>
+        <!-- Camera Reader --> 
+        <h2 id="scannedTextMemo">
+            Please scan a QR Code...
+        </h2>    
+        <div class="qrscanner" id="scanner">
+        </div> 
+        <button id="restartCamera">Restart Camera</button>     
         <!-- Camera Reader -->
 
         <!-- Footer -->
-        <div id="output">
-            <div id="outputMessage">No QR code detected.</div>
-            <div hidden=""><b>Data:</b><span id="outputData"></span></div>
-        </div>
         <section class="qr-instruction">
             <section>
                 <h2 class="hidden">Instruction</h2>
