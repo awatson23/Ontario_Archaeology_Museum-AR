@@ -5,11 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title class="hidden">Museum of Ontario Archaeology - AR App</title>
-    <script src="js/jsQR.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap"
-        rel="stylesheet">
+    <script src="js/jsqrscanner.nocache.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/flavicon-moalogo.png" type="image/gif" sizes="16x16">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="images/icons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="MOA - AR">
+    <link rel="apple-touch-icon" href="/images/icons/icon-152x152.png">
+
 </head>
 
 <!-- start of the main nav section -->
@@ -21,7 +38,7 @@
             <h2 class="hidden">Main Navigator</h2>
             <ul class="nav-links">
                 <li><a href="#">home</a></li>
-                <li><a href="longhouse.html">longhouse history</a></li>
+                <li><a href="lawsonsite.html">lawson site</a></li>
                 <li><a href="about.html">about us</a></li>
                 <li><a href="supportus.html">support us</a></li>
                 <li><a href="#">faq</a></li>
@@ -41,23 +58,38 @@
         </div>
 
         <h1 class="hidden"> Museum of Ontario Archaeology - AR section</h1>
-        <!-- Camera Reader -->
-        <div id="loadingMessage" hidden="">⌛ Loading video...</div>
-        <canvas id="canvas" height="480" width="640"></canvas>
+        <!-- Camera Reader --> 
+        <h2 id="scannedTextMemo">
+            Please scan a QR Code...
+        </h2>    
+        <div class="qrscanner" id="scanner">
+        </div> 
+        <button id="restartCamera">Restart Camera</button>     
         <!-- Camera Reader -->
 
         <!-- Footer -->
-        <div id="output">
-            <div id="outputMessage">No QR code detected.</div>
-            <div hidden=""><b>Data:</b><span id="outputData"></span></div>
-        </div>
-
-        <footer>
-            <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
-        </footer>
+        <section class="qr-instruction">
+            <section>
+                <h2 class="hidden">Instruction</h2>
+                <h3 class="instruction-title">User Manual</h3>
+                <p> </p>
+            </section>
+            <div>
+                <img src="images/moa-instuction-icons.svg" alt="moa instruction icons">
+            </div>
+        </section>
     </div>
+    <footer>
+        <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
+    </footer>
 
-
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+            })
+        }
+    </script>
     <script src="js/main.js"></script>
     <script src="js/functionality.js"></script>
 </body>
