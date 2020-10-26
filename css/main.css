@@ -161,11 +161,12 @@ h3 {
 
 #scanner video
 {
-    z-index: 2;
     max-width: 60%;
     margin: 0 auto;
     display: block;
     margin-top: 20px;
+    position: relative;
+    z-index: -1;
 }
 
 #scannedTextMemo {
