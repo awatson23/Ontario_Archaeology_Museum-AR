@@ -150,8 +150,10 @@ h3 {
 }
 
 .logoWrapper img {
+    display: flex;
     width: 80%;
     height: auto;
+    margin: 0 auto;
     margin-bottom: 40px;
 }
 
