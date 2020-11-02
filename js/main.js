@@ -1,4 +1,4 @@
-  let resetButton = document.querySelector("#restartCamera")
+let resetButton = document.querySelector("#restartCamera")
 
   function onQRCodeScanned(scannedText)
     {
@@ -20,7 +20,7 @@
             if (device.kind === 'videoinput') {
               exCameras.push(device.deviceId)
             }
-         });
+        });
             
             return Promise.resolve(exCameras);
         }).then(function(ids){
@@ -55,4 +55,7 @@
       location.reload();
     }
 
-    resetButton.addEventListener("click", restartCamera);
+    if(resetButton) 
+    {
+      resetButton.addEventListener("click", restartCamera);
+    }
