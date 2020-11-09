@@ -1,0 +1,23 @@
+{
+  "name": "Ontario_Archaeology_Museum-AR",
+  "version": "1.0.0",
+  "description": "Creating a museum AR experience like no other!\r HTML & CSS\r ## Student Team\r * **Designer**\r    - Aaron Paterson",
+  "main": "sw.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NohaKareem/Ontario_Archaeology_Museum-AR.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NohaKareem/Ontario_Archaeology_Museum-AR/issues"
+  },
+  "homepage": "https://github.com/NohaKareem/Ontario_Archaeology_Museum-AR#readme"
+}
