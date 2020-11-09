@@ -13,6 +13,7 @@ body {
     color: #333;
 }
 
+
 p {
     font-size: 1vw;
     font-weight: 300;
@@ -33,6 +34,19 @@ h3 {
     font-size: 7vw;
     font-weight: 500;
     text-align: center;
+}
+
+
+#desktopNotification {
+    background-color: rgba(255, 0, 0, 0.904);
+    width: 400px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: none;
+    line-height: 20px;
 }
 
 .nav {
@@ -150,8 +164,10 @@ h3 {
 }
 
 .logoWrapper img {
+    display: flex;
     width: 80%;
     height: auto;
+    margin: 0 auto;
     margin-bottom: 40px;
 }
 
@@ -159,6 +175,7 @@ h3 {
 
 #scanner video
 {
+    z-index: 2;
     max-width: 60%;
     margin: 0 auto;
     display: block;
