@@ -1,4 +1,4 @@
-  let resetButton = document.querySelector("#restartCamera")
+let resetButton = document.querySelector("#restartCamera")
 
   function onQRCodeScanned(scannedText)
     {
@@ -56,3 +56,6 @@
     }
 
     resetButton.addEventListener("click", restartCamera);
+
+
+    
