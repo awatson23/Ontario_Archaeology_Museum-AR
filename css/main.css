@@ -140,11 +140,11 @@ h3 {
 }
 
 .toggle .line1 {
-    transform: rotate(-45deg translateX(-5px, 6px));
+    transform: rotate(-45deg) translateX(-5px, 6px);
 }
 
 .toggle .line2 {
-    transform: rotate(45deg translateX(-5px, -6px));
+    transform: rotate(45deg) translateX(-5px, -6px);
 }
 
 .mainContainer {

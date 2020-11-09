@@ -20,7 +20,7 @@ let resetButton = document.querySelector("#restartCamera")
             if (device.kind === 'videoinput') {
               exCameras.push(device.deviceId)
             }
-         });
+        });
             
             return Promise.resolve(exCameras);
         }).then(function(ids){
@@ -55,7 +55,12 @@ let resetButton = document.querySelector("#restartCamera")
       location.reload();
     }
 
+
+    if(resetButton) 
+    {
+      resetButton.addEventListener("click", restartCamera);
+    }
+
     resetButton.addEventListener("click", restartCamera);
 
 
-    
