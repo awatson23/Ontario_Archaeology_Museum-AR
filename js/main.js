@@ -64,7 +64,12 @@ let resetButton = document.querySelector("#restartCamera")
       location.reload();
     }
 
+
     if(resetButton) 
     {
       resetButton.addEventListener("click", restartCamera);
     }
+
+    resetButton.addEventListener("click", restartCamera);
+
+

@@ -37,7 +37,7 @@
         <div class="nav">
             <h2 class="hidden">Main Navigator</h2>
             <ul class="nav-links">
-                <li><a href="#">home</a></li>
+                <li><a href="index.html">home</a></li>
                 <li><a href="lawsonsite.html">lawson site</a></li>
                 <li><a href="about.html">about us</a></li>
                 <li><a href="supportus.html">support us</a></li>
@@ -54,10 +54,15 @@
         <!-- This is the logo section with wrapper  -->
         <div class="logoWrapper">
             <h2 class="hidden">Logo Section</h2>
-            <img src="images/moalogo_final_transparent.png" alt="logo picture for header" id="moalogo" width="650">
+            <a href="index.html"><img src="images/moalogo_final_transparent.png" alt="logo picture for header" id="moalogo" width="650">
+            </a>
         </div>
 
         <h1 class="hidden"> Museum of Ontario Archaeology - AR section</h1>
+        
+        <p id="desktopNotification">We noticed that you're visiting from a Desktop. 
+        For optimal experience, visit this webpage using an Android or Apple/iOS Mobile Device.</p>
+
         <!-- Camera Reader --> 
         <h2 id="scannedTextMemo">
             Please scan a QR Code...
@@ -83,6 +88,24 @@
         <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
     </footer>
 
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+            })
+        }
+    </script>
+    <script type="text/javascript">
+        /*check if user is visiting from a mobile device. if not, send a prompt to suggest they visit from an Android or Apple/iOS mobile device*/
+		let desktopNotification = document.getElementById('desktopNotification');
+
+		if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+            desktopNotification.style.display = 'none';
+		} else {
+			desktopNotification.style.display = 'block';
+		}
+
+	</script>
     <script src="js/main.js"></script>
     <script src="js/functionality.js"></script>
 </body>
