@@ -1,3 +1,12 @@
+// register service worker
+if('serviceWorker' in navigator) {
+  window.addEventListener('load', _ => {
+      navigator.serviceWorker.register('/sw.js')
+      .then(_ => console.log('successful sw registration'))
+      .catch(_ => console.log('did NOT register sw'));
+  })
+}
+
 let resetButton = document.querySelector("#restartCamera")
 
   function onQRCodeScanned(scannedText)
