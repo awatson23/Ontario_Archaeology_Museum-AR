@@ -1,0 +1,635 @@
+$smallFontSize: 4vw;
+$largeFontSize: 7vw;
+
+$smallTabletFontSize: 2vw;
+$largeTabletFontSize: 4vw;
+
+.hidden {
+    display: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+p {
+    // font-size: 1vw;
+    font-size: $smallFontSize;
+    font-weight: 300;
+    line-height: 0.95vw;
+}
+
+.baseFontSize {
+    font-size: $smallFontSize;
+    line-height: $smallFontSize * 2;
+}
+
+li, a, button {
+    font-size: 14px;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+}
+
+a {
+    font-size: $smallFontSize;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h3 {
+    font-size: $largeFontSize;
+    font-weight: 500;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 12vh;
+}
+
+.nav-links {
+    display: none;
+    position: absolute;
+    left: 0px;
+    width: 60%;
+    justify-content: space-around;
+
+    li {
+        list-style: none;
+        text-transform: uppercase;
+    }
+    /* hamburger text size */
+    a {
+        letter-spacing: 1.5px;
+        text-decoration: none;
+        color: white;
+        font-size: 6vw;
+        font-weight: 100;
+    }
+}
+
+/* hide the burger in tablet */
+.burger {
+    cursor: pointer;
+
+    /* hambruger lines */
+    div {
+        width: 50px;
+        height: 4px;
+        margin: 7px;
+        background-color: black;
+    }
+}
+
+/*  hamburger menu styling/posisioning */
+.nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 12vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  
+    /* hide the nav link before the slide out */
+    li {
+        opacity: 0;
+    }
+}
+
+.burger {
+    display: block;
+    position: absolute;
+    right: 0px;
+    margin-right: 40px;
+}
+
+.nav-active {
+    transform: translateX(0)
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px)
+    }
+}
+
+.toggle {
+    .line1 {
+        transform: rotate(-45deg) translateX(-5px, 6px);
+    }
+    .line2 {
+        transform: rotate(45deg) translateX(-5px, -6px);
+    }
+}
+
+.mainContainer {
+    overflow: hidden;
+    margin-top: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logoWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+    
+}
+
+/* index page */
+#scanner video
+{
+    max-width: 60%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 20px;
+}
+
+#scannedTextMemo {
+    margin-top: 20px;
+    background: #eee;
+    padding: 10px;
+    text-align: center;
+}
+
+#restartCamera {
+    display: block;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 10px auto 0 auto;
+    text-decoration: none;
+    background: #f89921;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* qr code instruction */
+.qr-instruction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    margin-top: 40px;
+
+    section {
+        text-align: center;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    div {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 100px;
+    }
+}
+
+.instruction-title {
+    font-size: $largeFontSize;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* artifact featured content */
+
+/* center text */
+
+#outputMessage {
+    text-align: center;
+}
+
+.artifact-ar-image {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.artifact-ar-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* artifact introduction */
+
+.artifact-introduction {
+    margin-top: 60px;
+}
+
+.artifact-introduction-description {
+    width: 100%;
+    height: auto;
+    padding: 9vw;
+}
+
+.artifact-introduction-description p {
+    // font-size: $smallFontSize;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+.artifact-size-parent {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: 30px;
+    padding: 30px;
+}
+
+.artifact-dimension-image {
+    /* margin-right: 30px; */
+    height: 100%;
+    
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.measure {
+    /* margin-left: 45px; */
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+
+    p {
+        // font-size: $smallFontSize;
+        font-weight: 300;
+    }
+}
+
+/* 3  */
+.artifact-feature-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.artifact-size-image {
+    display: flex;
+    justify-content: center;
+    
+    img {
+        margin-top: 30px;
+        width: 70%;
+        height: 70%;
+    }
+}
+
+.artifact-vertical-line {
+    width: 2px;
+    height: 0px;
+    background-color: black;
+    margin: 5px auto;
+    transition: all .5s ease;
+}
+
+.artifact-vertical-line.scroll-anim {
+    height: 200px;
+}
+
+/* artifact origin story */
+.artifact-origins-story {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vh;
+}
+
+.artifact-origins-story > div {
+    width: 75%;
+    height: auto;
+    font-size: $largeFontSize;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.artifact-origins-story {
+    h3 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        @extend .baseFontSize;
+        margin-bottom: 60px;
+    }
+}
+
+/* section 3 */
+.artifact-feature-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+    p {
+        width: 80%;
+        @extend .baseFontSize;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+}
+
+/* section magnify 4 & 5 */
+.artifact-feature-content-magnify {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+
+    p {
+        width: 80%;
+        @extend .baseFontSize;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    img {
+        width: 1100px;
+        height: auto;
+        overflow: hidden;
+    }
+}
+
+/* support page */
+.support-us-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+
+    h3 {
+        font-size: $largeFontSize;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+
+    p {
+        @extend .baseFontSize;
+        margin-bottom: 20px;
+    }
+}
+
+/*  lawson site */
+.lawson-site {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+
+    h3 {
+        font-size: $largeFontSize;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+
+    p {
+        @extend .baseFontSize;
+        margin-bottom: 20px;
+    }
+}
+
+/* about us page */
+.about-us-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+
+    iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+
+    h3 {
+        font-size: $largeFontSize;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+
+    p {
+        @extend .baseFontSize;
+        margin-bottom: 20px;
+    }
+}
+
+.lawson-site-video {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+
+    iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+.lawson-site {
+    h4 {
+        font-size: 5vw;
+        line-height: $largeFontSize;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    ul {
+        font-size: 2vw;
+        font-weight: 300;
+        line-height: 5vw;
+        list-style-type:disc;
+
+        li {
+            text-decoration: dotted;
+            margin-bottom: 10px;
+        }
+           
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 8vh;
+    margin-top: 25vh;
+    text-align: center;
+    border-top: solid 1px black;
+    bottom: 0;
+
+    small {
+        color: black;
+        font-size: $smallFontSize - 1;
+        margin: 0 auto;
+    }
+}
+
+#desktopNotification {
+    font-size: $smallFontSize;
+    background-color: rgba(255, 0, 0, 0.904);
+    width: 400px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 15px;
+    display: none;
+    line-height: 20px;
+}
+
+/******************************************/
+
+/******************************************/
+
+/*************MEDIA QUERIES***************/
+
+/******************************************/
+
+/******************************************/
+
+@media only screen and (min-width: 768px) {
+    /* For tablet + Size */
+    li, a, button {
+        font-size: $smallTabletFontSize;
+    }
+
+    h3 {
+        font-size: $largeTabletFontSize;
+    }
+
+    .support-us-content {
+        h3 {
+            font-size: $largeTabletFontSize;
+        }
+        p {
+            font-size: $smallTabletFontSize;
+            line-height: $smallTabletFontSize * 2;
+        }
+    }
+
+    .lawson-site {
+        h4 {
+            font-size: $smallTabletFontSize + 1;
+        }
+
+        p {
+            font-size: $smallTabletFontSize;
+            line-height: $smallTabletFontSize * 2;
+        }
+    }
+    .artifact-dimension-image img {
+        width: 350px;
+        height: 350px;
+    }
+    .artifact-vertical-line.scroll-anim {
+        height: 320px;
+    }
+    .artifact-size-parent {
+        padding: 45px;
+    }
+    .lawson-site-video iframe {
+        max-width: 100%;
+    }
+    .artifact-feature-content-magnify {
+        p {            
+            font-size: $smallTabletFontSize;
+            line-height: $smallTabletFontSize * 2;
+        }
+    }
+    .artifact-origins-story {
+        p {
+            font-size: $smallTabletFontSize;
+            line-height: $smallTabletFontSize * 2;
+        }
+    }
+    .about-us {
+        h3 {
+            font-size: $largeTabletFontSize;
+        }
+    
+        p {
+            font-size: $smallTabletFontSize;
+            line-height: $smallTabletFontSize * 2;
+        }
+    }
+    footer {
+        small {
+            font-size: $smallTabletFontSize - 1;
+        }
+    }
+    #desktopNotification {
+        font-size: $smallTabletFontSize;
+        line-height: $smallTabletFontSize * 1.25;
+    }
+}
