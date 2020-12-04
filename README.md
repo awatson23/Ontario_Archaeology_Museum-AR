@@ -1,6 +1,9 @@
 # Museum AR-Project
 Creating a museum AR experience like no other!
 HTML & CSS
+Git pages link: 
+https://awatson23.github.io/Ontario_Archaeology_Museum-AR/
+
 ## Student Team
 * **Designer**
    - Aaron Paterson
@@ -10,9 +13,11 @@ HTML & CSS
    - Jin Chang
    
 * **Front End JS**
-   
    - Cadence Watson
    - Cindy Mena
+  
+* **Front End and Back End**
+   - Noha Kareem
 
 ## Professors
 - John Bennett
