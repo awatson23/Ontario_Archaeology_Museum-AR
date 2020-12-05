@@ -32,13 +32,27 @@
 <!-- start of the main nav section -->
 
 <body>
+
+    <div id="myModal" class="modal">
+
+        <div class="parent-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Modal Header</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <div class="mainContainer">
         <!-- Main Navigation -->
         <div class="nav">
             <h2 class="hidden">Main Navigator</h2>
             <ul class="nav-links">
                 <li><a href="index.html">home</a></li>
-                <li><a href="longhouse.html">lawson site</a></li>
+                <li><a href="lawsonsite.html">lawson site</a></li>
                 <li><a href="about.html">about us</a></li>
                 <li><a href="supportus.html">support us</a></li>
                 <li><a href="#">faq</a></li>
@@ -59,17 +73,16 @@
         </div>
 
         <h1 class="hidden"> Museum of Ontario Archaeology - AR section</h1>
-        
-        <p id="desktopNotification">We noticed that you're visiting from a Desktop. 
-        For optimal experience, visit this webpage using an Android or Apple/iOS Mobile Device.</p>
 
-        <!-- Camera Reader --> 
+        <p id="desktopNotification">We noticed that you're visiting from a Desktop. For optimal experience, visit this webpage using an Android or Apple/iOS Mobile Device.</p>
+
+        <!-- Camera Reader -->
         <h2 id="scannedTextMemo">
             Please scan a QR Code...
-        </h2>    
+        </h2>
         <div class="qrscanner" id="scanner">
-        </div> 
-        <button id="restartCamera">Restart Camera</button>     
+        </div>
+        <button id="restartCamera">Restart Camera</button>
         <!-- Camera Reader -->
 
         <!-- Footer -->
@@ -97,17 +110,17 @@
     </script>
     <script type="text/javascript">
         /*check if user is visiting from a mobile device. if not, send a prompt to suggest they visit from an Android or Apple/iOS mobile device*/
-		let desktopNotification = document.getElementById('desktopNotification');
+        let desktopNotification = document.getElementById('desktopNotification');
 
-		if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
             desktopNotification.style.display = 'none';
-		} else {
-			desktopNotification.style.display = 'block';
-		}
-
-	</script>
+        } else {
+            desktopNotification.style.display = 'block';
+        }
+    </script>
     <script src="js/main.js"></script>
     <script src="js/functionality.js"></script>
+    <script src="js/popUp.js"></script>
 </body>
 
 </html>
