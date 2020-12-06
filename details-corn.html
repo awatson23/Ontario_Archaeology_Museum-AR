@@ -6,6 +6,14 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Museum of Ontario Archaeology - AR App</title>
     <script src="js/jsQR.js"></script>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap"
         rel="stylesheet">
     <link rel="icon" href="images/flavicon-moalogo.png" type="image/gif" sizes="16x16">
@@ -41,10 +49,12 @@
         <!-- artifact featured content -->
         <section class="artifact-ar-image">
             <h2 class="hidden">Artifact Featured Content</h2>
-            <a href="images/kernel-corn.usdz" rel="ar"><!-- NEw USDZ -->
-            <!-- <a href="images/corn-kernel.usdz" rel="ar"> -->
-                <img src="images/corn-kernel.png" alt="Image of an artifact">
-            </a>
+            <model-viewer src="assets/3d/corn.glb" alt="Artifact 3D model"
+                auto-rotate camera-controls autoplay
+                poster="images/corn-kernel.png"
+                ar ar-modes="webxr scene-viewer"
+                ar-scale="auto" ios-src="assets/usdz/kernel-corn.usdz">
+            </model-viewer>
         </section>
 
         <!-- artifact introduction -->
