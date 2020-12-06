@@ -2,6 +2,10 @@ $smallFontSize: 4vw;
 $largeFontSize: 7vw;
 $smallTabletFontSize: 2vw;
 $largeTabletFontSize: 4vw;
+$black: #333;
+$orange: #f8981d;
+$red:#ce2027;
+
 .hidden {
     display: none;
 }
@@ -14,7 +18,7 @@ $largeTabletFontSize: 4vw;
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #333;
+    color: $black;
 }
 
 p {
@@ -39,6 +43,12 @@ button {
 
 a {
     font-size: $smallFontSize;
+    color: $black;
+    // text-decoration: underline;
+}
+
+a:hover {
+    color: $orange;
 }
 
 strong {
