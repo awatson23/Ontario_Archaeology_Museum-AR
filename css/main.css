@@ -398,6 +398,9 @@ h3 {
 .lawson-site p {
   margin-bottom: 20px;
 }
+.lawson-site-points {
+  margin-left: 10%;
+}
 
 /* about us page */
 .about-us-video {
@@ -627,12 +630,15 @@ button {
     line-height: 4vw;
   }
 
-  .lawson-site h4 {
+  .lawson-site h4, .lawson-site h3 {
     font-size: 3vw;
   }
   .lawson-site p {
     font-size: 2vw;
     line-height: 4vw;
+  }
+  .lawson-site-points {
+    margin-left: 7%;
   }
 
   .artifact-dimension-image img {
@@ -689,6 +695,10 @@ button {
     margin-top: -10vh;
   }
 
+  .artifact-feature-content p {
+    font-size: 2vw;
+    line-height: 4vw;
+  }
   .artifact-introduction-description p {
     line-height: 4vw;
   }
