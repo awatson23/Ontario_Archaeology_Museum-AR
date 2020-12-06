@@ -562,7 +562,8 @@ footer small {
 }
 
 model-viewer {
-  height: 30vh;
+  height: 35vh;
+  width: 100vw;
 }
 
 @-webkit-keyframes slideIn {
@@ -681,6 +682,19 @@ button {
   .modal-content {
     width: 60%;
     height: 40%;
+  }
+
+  .logoWrapper img {
+    width: 50%;
+    margin-top: -10vh;
+  }
+
+  .artifact-introduction-description p {
+    line-height: 4vw;
+  }
+
+  model-viewer {
+    height: 55vh;
   }
 }
 
