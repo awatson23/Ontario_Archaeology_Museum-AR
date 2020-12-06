@@ -34,6 +34,11 @@ button {
 
 a {
   font-size: 4vw;
+  color: #333;
+}
+
+a:hover {
+  color: #f8981d;
 }
 
 strong {
