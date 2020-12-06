@@ -40,11 +40,14 @@
 
     
               <!-- artifact featured content -->
-              <section class="artifact-ar-image">
+            <section class="artifact-ar-image">
                 <h2 class="hidden">Artifact Featured Content</h2>
-                <a href="assets/usdz/phalange_bone.usdz" rel="ar">
-                    <img src="images/phalange_bone3.png" alt="Deer Phalange bone">
-                </a>
+                <model-viewer src="assets/3d/phalange-gltf.gltf" alt="Deer Phalange Bone 3d model"
+                    auto-rotate camera-controls autoplay
+                    poster="images/phalange_bone3.png"
+                    ar ar-modes="webxr scene-viewer"
+                    ar-scale="auto" ios-src="assets/usdz/phalange_bone.usdz">
+                </model-viewer>
             </section>
     
              <!-- artifact introduction -->
