@@ -79,8 +79,8 @@ h3 {
   /* hambruger lines */
 }
 .burger div {
-  width: 50px;
-  height: 4px;
+  width: 30px;
+  height: 2px;
   margin: 7px;
   background-color: black;
 }
@@ -695,6 +695,17 @@ button {
 
   model-viewer {
     height: 55vh;
+  }
+
+  .burger {
+    cursor: pointer;
+    /* hambruger lines */
+  }
+  .burger div {
+    width: 50px;
+    height: 4px;
+    margin: 7px;
+    background-color: black;
   }
 }
 

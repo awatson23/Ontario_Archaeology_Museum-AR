@@ -85,8 +85,8 @@ h3 {
     cursor: pointer;
     /* hambruger lines */
     div {
-        width: 50px;
-        height: 4px;
+        width: 30px;
+        height: 2px;
         margin: 7px;
         background-color: black;
     }
@@ -757,5 +757,15 @@ model-viewer {
     }
     model-viewer {
         height: 55vh;
+    }
+    .burger {
+        cursor: pointer;
+        /* hambruger lines */
+        div {
+            width: 50px;
+            height: 4px;
+            margin: 7px;
+            background-color: black;
+        }
     }
 }
