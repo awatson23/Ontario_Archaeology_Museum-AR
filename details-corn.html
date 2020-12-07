@@ -49,12 +49,22 @@
         <!-- artifact featured content -->
         <section class="artifact-ar-image">
             <h2 class="hidden">Artifact Featured Content</h2>
-            <model-viewer src="assets/3d/corn.glb" alt="Artifact 3D model"
+            <!-- <model-viewer src="assets/3d/corn.glb" alt="Artifact 3D model"
                 auto-rotate camera-controls autoplay
+                poster="images/corn-kernel.png"
+                ar ar-modes="webxr scene-viewer"
+                exposure="2" shadow-intensity="0"
+                ar-scale="auto" ios-src="assets/usdz/kernel-corn.usdz">
+            </model-viewer> -->
+            <model-viewer src="assets/3d/corn.glb"
+                alt="Corn kernel 3D model"
+                camera-controls exposure="2" shadow-intensity="0" 
+                auto-rotate camera-orbit="54.56deg 75.38deg 17.15m"
                 poster="images/corn-kernel.png"
                 ar ar-modes="webxr scene-viewer"
                 ar-scale="auto" ios-src="assets/usdz/kernel-corn.usdz">
             </model-viewer>
+            
         </section>
 
         <!-- artifact introduction -->
