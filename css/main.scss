@@ -582,7 +582,7 @@ footer {
     background-color: #fefefe;
     margin: 0 auto;
     width: 50%;
-    height: 50%;
+    // height: 50%;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
@@ -605,7 +605,7 @@ footer {
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: white;
     color: white;
 }
 
@@ -613,6 +613,12 @@ footer {
     font-size: $smallFontSize;
     font-weight: 500;
     text-align: center;
+}
+
+.modal-header img{
+    width: 80%;
+    margin-left: 10%;
+
 }
 
 model-viewer {
