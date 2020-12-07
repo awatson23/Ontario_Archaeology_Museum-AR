@@ -4,10 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="hidden">Museum of Ontario Archaeology - AR App</title>
+    <title>Museum of Ontario Archaeology - AR App</title>
     <script src="js/jsQR.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap"
-        rel="stylesheet">
+    
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/flavicon-moalogo.png" type="image/gif" sizes="16x16">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -82,7 +89,7 @@
             </p>
             <!-- See the lawson site in virtual reality -->
             <div class="working-lawson-ar artifact-ar-image">
-                <h3>View in AR</h3>
+                <h3>View it in AR</h3>
                 <a href="assets/usdz/working-longhouse.usdz" rel="ar">
                     <img src="images/working-lawsite-still.jpg" alt="Longhouse Image" width="800" height="800">
                 </a>
@@ -97,6 +104,15 @@
                 the mid 2000’s and have contributed to our understanding of this complex site. Currently, we are
                 focusing on the rehabilitation of the site
             </p>
+            <section class="artifact-ar-image">
+                <h2 class="hidden">Native Canadian Lawson Longhouse</h2>
+               <model-viewer src="assets/3d/longhouse-shell.gltf" alt="Lawson site 3D model"
+                    auto-rotate camera-controls autoplay
+                    poster="images/lawson-still.png"
+                    ar ar-modes="webxr scene-viewer"
+                    ar-scale="auto" ios-src="images/awl.usdz">
+                </model-viewer>
+            </section>
             <h4>Lawson Site: Statement of Significance</h4>
             <p>
                 In 2004 the Lawson Site was officially placed on the Canadian Register of Historic Places; it being the
