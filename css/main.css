@@ -451,20 +451,22 @@ footer {
   height: 100%; }
 
 .popUpContent {
-  background-color: #fefefe;
   margin: 0 auto;
-  width: 50%;
-  height: 50%;
   -webkit-animation-name: slideIn;
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
   animation-duration: 0.4s; }
 
+.popUpInfo img {
+  width: 300px; }
+
 .close {
-  color: white;
+  color: black;
   float: right;
   font-size: 28px;
-  font-weight: bold; }
+  font-weight: bold;
+  position: absolute;
+  margin-left: -20px; }
 
 .close:hover,
 .close:focus {
@@ -472,15 +474,14 @@ footer {
   text-decoration: none;
   cursor: pointer; }
 
-.popUpInfo {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white; }
-
 .popUpInfo h2 {
   font-size: 4vw;
   font-weight: 500;
   text-align: center; }
+
+.modal-header img {
+  width: 80%;
+  margin-left: 10%; }
 
 model-viewer {
   height: 35vh;
@@ -573,10 +574,6 @@ model-viewer {
   #desktopNotification {
     font-size: 2vw;
     line-height: 2.5vw; }
-
-  .popUpContent {
-    width: 60%;
-    height: 40%; }
 
   .logoWrapper img {
     width: 50%;
