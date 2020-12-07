@@ -5,7 +5,6 @@ $largeTabletFontSize: 4vw;
 $black: #333;
 $orange: #f8981d;
 $red:#ce2027;
-
 .hidden {
     display: none;
 }
@@ -317,6 +316,7 @@ h3 {
     }
 }
 
+
 /* 3  */
 
 .artifact-feature-content {
@@ -346,6 +346,7 @@ h3 {
     height: 200px;
 }
 
+
 /* artifact origin story */
 
 .artifact-origins-story {
@@ -372,6 +373,7 @@ h3 {
     }
 }
 
+
 /* section 3 */
 
 .artifact-feature-content {
@@ -385,6 +387,7 @@ h3 {
         text-align: center;
     }
 }
+
 
 /* section magnify 4 & 5 */
 
@@ -406,6 +409,7 @@ h3 {
     }
 }
 
+
 /* support page */
 
 .support-us-content {
@@ -425,6 +429,7 @@ h3 {
         margin-bottom: 20px;
     }
 }
+
 
 /*  lawson site */
 
@@ -448,6 +453,7 @@ h3 {
         margin-left: 10%;
     }
 }
+
 
 /* about us page */
 
@@ -553,7 +559,7 @@ footer {
     line-height: 20px;
 }
 
-.modal {
+.popUp {
     display: none;
     position: fixed;
     z-index: 1;
@@ -570,7 +576,7 @@ footer {
     animation-duration: 0.4s
 }
 
-.parent-modal {
+.mainPopUp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -578,22 +584,28 @@ footer {
     height: 100%;
 }
 
-.modal-content {
-    background-color: #fefefe;
+.popUpContent {
+    // background-color: #fefefe;
     margin: 0 auto;
-    width: 50%;
-    height: 50%;
+    // width: 50%;
+    // height: 50%;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s
 }
 
+.popUpInfo img {
+    width: 300px;
+}
+
 .close {
-    color: white;
+    color: rgb(0, 0, 0);
     float: right;
     font-size: 28px;
     font-weight: bold;
+    position: absolute;
+    margin-left: -20px;
 }
 
 .close:hover,
@@ -603,16 +615,15 @@ footer {
     cursor: pointer;
 }
 
-.modal-header {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
-
-.modal-header h2 {
+.popUpInfo h2 {
     font-size: $smallFontSize;
     font-weight: 500;
     text-align: center;
+}
+
+.modal-header img {
+    width: 80%;
+    margin-left: 10%;
 }
 
 model-viewer {
@@ -660,6 +671,7 @@ model-viewer {
     }
 }
 
+
 /******************************************/
 
 
@@ -694,7 +706,8 @@ model-viewer {
         }
     }
     .lawson-site {
-        h4, h3 {
+        h4,
+        h3 {
             font-size: $smallTabletFontSize + 1;
         }
         p {
@@ -748,10 +761,10 @@ model-viewer {
         font-size: $smallTabletFontSize;
         line-height: $smallTabletFontSize * 1.25;
     }
-    .modal-content {
-        width: 60%;
-        height: 40%;
-    }
+    // .popUpContent {
+    //     width: 60%;
+    //     height: 40%;
+    // }
     .logoWrapper {
         img {
             width: 50%;
