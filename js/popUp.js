@@ -1,20 +1,18 @@
-var modal = document.getElementById("myModal");
+var popUp = document.getElementById("popUpWindow");
 
-
-var btn = document.getElementById("myBtn");
 
 var span = document.getElementsByClassName("close")[0];
 
 window.onload = function() {
-    modal.style.display = "block";
+    popUp.style.display = "block";
 }
 
 
 span.onclick = function() {
-    modal.style.display = "none";
+    popUp.style.display = "none";
 }
 
 window.onclick = function() {
-    modal.style.display = "none";
+    popUp.style.display = "none";
 
 }
