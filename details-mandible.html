@@ -6,6 +6,14 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <title>Museum of Ontario Archaeology - AR App</title>
     <script src="js/jsQR.js"></script>
+
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap" rel="stylesheet">
     <link rel="icon" href="images/flavicon-moalogo.png" type="image/gif" sizes="16x16">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
@@ -22,7 +30,7 @@
                 <li><a href="lawsonsite.html">lawsn site</a></li>
                 <li><a href="about.html">about us</a></li>
                 <li><a href="supportus.html">support us</a></li>
-                <li><a href="#">faq</a></li>
+                <!-- <li><a href="#">faq</a></li> -->
             </ul>
             <!-- hamburger -->
             <div class="burger">
@@ -40,9 +48,12 @@
             <!-- artifact featured content -->
             <section class="artifact-ar-image">
                 <h2 class="hidden">Artifact Featured Content</h2>
-                <a href="images/mandible.usdz" rel="ar">
-                    <img src="images/mandible.png" alt="mandible Image" width="800" height="800">
-                </a>
+                <model-viewer src="assets/3d/mandible.gltf" alt="Mandible 3D model"
+                    auto-rotate camera-controls autoplay
+                    poster="images/mandible.png"
+                    ar ar-modes="webxr scene-viewer"
+                    ar-scale="auto" ios-src="assets/usdz/mandible.usdz">
+                </model-viewer>
             </section>
     
              <!-- artifact introduction -->
