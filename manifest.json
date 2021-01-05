@@ -4,7 +4,7 @@
   "theme_color": "#f89921",
   "background_color": "#ffffff",
   "display": "standalone",
-  "start_url": "/",
+  "start_url": "https://awatson23.github.io/Ontario_Archaeology_Museum-AR/index.html",
   "icons": [
     {
       "src": "images/icons/icon-72x72.png",
