@@ -30,12 +30,17 @@ function provideVideoQQ() {
 
             return Promise.resolve(exCameras);
         }).then(function(ids) {
+
             if (ids.length === 0) {
                 document.querySelector("#scannedTextMemo").innerHTML = "Your device does not have a camera";
             } else {
                 var constraints = { video: { facingMode: "environment" } };
                 return navigator.mediaDevices.getUserMedia(constraints);
             }
+        }).catch(function(err) {
+            //log to console first 
+            console.log(err); /* handle the error */
+            document.querySelector("#scannedTextMemo").innerHTML = "Please enable your camera";
         });
 }
 
