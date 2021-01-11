@@ -38,7 +38,7 @@
             <div class="burger">
                 <!-- burger lines -->      
                 <div class="line1"></div>
-                <div class=line2></div>
+                <div class="line2"></div>
             </div>
         </div>
         <!-- artifact content container -->
@@ -89,10 +89,17 @@
             </p>
             <!-- See the lawson site in virtual reality -->
             <div class="working-lawson-ar artifact-ar-image">
+                <h2 class="hidden">Native Canadian Lawson Longhouse</h2>
                 <h3>View it in AR</h3>
-                <a href="assets/usdz/working-longhouse.usdz" rel="ar">
+                <!-- <a href="assets/usdz/working-longhouse.usdz" rel="ar">
                     <img src="images/working-lawsite-still.jpg" alt="Longhouse Image" width="800" height="800">
-                </a>
+                </a> -->
+                <model-viewer src="assets/3d/longhouse-shell.gltf" alt="Lawson site 3D model"
+                    auto-rotate camera-controls autoplay
+                    poster="images/lawson-still.png"
+                    ar ar-modes="webxr scene-viewer quick-look"
+                    ar-scale="auto" ios-src="assets/usdz/working-longhouse.usdz">
+                </model-viewer>
             </div>
             <h4>Archaeology on the Lawson Site</h4>
             <p>
@@ -106,7 +113,7 @@
                 
                 <br><br> Come and visit the reconstructed longhouse and see for yourself…
             </p>
-            <section class="artifact-ar-image">
+            <!-- <section class="artifact-ar-image">
                 <h2 class="hidden">Native Canadian Lawson Longhouse</h2>
                <model-viewer src="assets/3d/longhouse-shell.gltf" alt="Lawson site 3D model"
                     auto-rotate camera-controls autoplay
@@ -114,7 +121,7 @@
                     ar ar-modes="webxr scene-viewer" quick-look
                     ar-scale="auto" ios-src="assets/usdz/working-longhouse.usdz">
                 </model-viewer>
-            </section>
+            </section> -->
             <h4>Lawson Site: Statement of Significance</h4>
             <p>
                 In 2004 the Lawson Site was officially placed on the Canadian Register of Historic Places; it being the
