@@ -457,22 +457,15 @@ h3 {
 
 /* about us page */
 
-.about-us-video {
+.about-us-image {
     display: flex;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 30px;
     overflow: hidden;
-    padding-bottom: 56.25%;
     position: relative;
-    height: 0;
-    iframe {
-        left: 0;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-    }
+    height: 40vh;
+    width: auto;
 }
 
 .about-us {
@@ -829,5 +822,10 @@ model-viewer {
             margin: 7px;
             background-color: black;
         }
+    }
+
+    .about-us-image {
+        width: 80vw;
+        height: auto;
     }
 }
