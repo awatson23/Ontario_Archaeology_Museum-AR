@@ -104,6 +104,12 @@
                 <img src="images/moa-instuction-icons.svg" alt="moa instruction icons">
             </div>
         </section>
+        <section id="iOSinstructions">
+            <p>iOS test</p>
+        </section>
+        <section id="androidinstructions">
+            <p>Android test</p>
+        </section>
     </div>
     <footer>
         <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
@@ -124,6 +130,17 @@
             desktopNotification.style.display = 'none';
         } else {
             desktopNotification.style.display = 'block';
+        }
+
+        if (/iPhone|iPad|Ipod/i.test(navigator.userAgent)) {
+            iOSinstructions.style.display = 'block';
+            androidinstructions.style.display = 'none';
+        } else if (/Android/i.test(navigator.userAgent)) {
+            iOSinstructions.style.display = 'none';
+            androidinstructions.style.display = 'block';
+        } else {
+            iOSinstructions.style.display = 'none';
+            androidinstructions.style.display = 'none';
         }
     </script>
     <script src="js/main.js"></script>
