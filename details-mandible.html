@@ -10,11 +10,12 @@
     <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="images/flavicon-moalogo.png" type="image/gif" sizes="16x16">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -30,104 +31,85 @@
                 <li><a href="lawsonsite.html">lawson site</a></li>
                 <li><a href="about.html">about us</a></li>
                 <li><a href="supportus.html">support us</a></li>
-                <!-- <li><a href="#">faq</a></li> -->
             </ul>
             <!-- hamburger -->
             <div class="burger">
                 <!-- burger lines -->
                 <div class="line1"></div>
-                <div class=line2></div>
+                <div class="line2"></div>
             </div>
         </div>
 
         <div class="logoWrapper">
             <h2 class="hidden">Logo</h2>
-            <a href="index.html"><img src="images/moalogo_final_transparent.png" alt="logo picture for header" id="moalogo" width="650"></a>
+            <a href="index.html"><img src="images/moalogo_final_transparent.png" alt="logo picture for header"
+                    id="moalogo" width="650"></a>
         </div>
 
-            <!-- artifact featured content -->
-            <section class="artifact-ar-image">
-                <h2 class="hidden">Artifact Featured Content</h2>
-                <model-viewer src="assets/3d/mandible.gltf" alt="Mandible 3D model"
-                    auto-rotate camera-controls autoplay
-                    poster="images/mandible.png"
-                    ar ar-modes="webxr scene-viewer quick-look"
-                    ar-scale="auto" ios-src="assets/usdz/mandible.usdz">
-                </model-viewer>
-            </section>
-    
-             <!-- artifact introduction -->
-             <section class="artifact-introduction">
-                <h2 class="hidden">Artifact Introduction</h2>
-                <h3>Mandible</h3>
-                <!-- Size -->
-                <div class="artifact-size-parent">
-                    <!-- size detail -->
-                    <div class="measure">
-                        <p>12.05cm</p>
-                    </div>
-                    <div class="artifact-vertical-line">
-                        <!-- keyline -->
-                    </div>
-                    <div class="artifact-dimension-image">
-                        <img src="images/mandible-front.png" alt="Image of an artifact">
-                    </div>
+        <!-- artifact featured content -->
+        <section class="artifact-ar-image">
+            <h2 class="hidden">Mandible Featured Content</h2>
+            <model-viewer src="assets/3d/mandible.gltf" alt="Mandible 3D model" auto-rotate camera-controls autoplay
+                poster="images/mandible.png" ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto"
+                ios-src="assets/usdz/mandible.usdz">
+            </model-viewer>
+        </section>
+
+        <!-- artifact introduction -->
+        <section class="artifact-introduction">
+            <h2 class="hidden">Mandible Introduction</h2>
+            <h3>Mandible</h3>
+            <!-- Size -->
+            <div class="artifact-size-parent">
+                <!-- size detail -->
+                <div class="measure">
+                    <p>12.05cm</p>
                 </div>
-                <!-- desciption -->
-                <div class="artifact-introduction-description">
-                    <p><strong>Material:</strong> Deer Bone</p>
+                <div class="artifact-vertical-line">
+                    <!-- keyline -->
                 </div>
-            </section>
-    
-    <!-- 2 -->
-    <section class="artifact-origins-story">
-        <h2 class="hidden">Artifact Origin Story</h2>
-        <div>
-            <h3>Everything is put to good use</h3>
+                <div class="artifact-dimension-image">
+                    <img src="images/mandible-front.png" alt="Mandible image">
+                </div>
+            </div>
+            <!-- description -->
+            <div class="artifact-introduction-description">
+                <p><strong>Material:</strong> Deer Bone</p>
+            </div>
+        </section>
+
+        <!-- 2 -->
+        <section class="artifact-origins-story">
+            <h2 class="hidden">Mandible Origin Story</h2>
+            <div>
+                <h3>Everything is put to good use</h3>
+                <p>
+                    Deer was a major resource for the inhabitants of the Lawson
+                    site and very little of it was put to waste. Teeth, such as the ones
+                    in this mandible, are made of tough material that makes them strong,
+                    durable tools that stand up well to repetitive work.
+                </p>
+            </div>
+        </section>
+        <!-- 3 -->
+        <section class="artifact-feature-content">
+            <h2 class="hidden">Mandible Feature Content</h2>
+            <h3 class="feature-title">A multi-purpose tool</h3>
+            <div class="artifact-size-image">
+                <img src="images/mandible-side.png" alt="Mandible image">
+            </div>
             <p>
-                Deer was a major resource for the inhabitants of the Lawson 
-                site and very little of it was put to waste. Teeth, such as the ones 
-                in this mandible, are made of tough material that makes them strong, 
-                durable tools that stand up well to repetitive work. 
+                Lower jawbones like this one could be repurposed as scrapers
+                that would be used in tasks like shelling corn or processing leather and hide.
+                Other bones, like the shoulder blade, also made effective scrapers, as did modified stones.
             </p>
-        </div>
-    </section>
-    <!-- 3 -->
-    <section class="artifact-feature-content">
-        <h2 class="hidden">Artifact Feature Content</h2>
-        <h3 class="feature-title">A multi-purpose tool</h3>
-        <div class="artifact-size-image">
-            <img src="images/mandible-side.png" alt="Image of an artifact">
-        </div>
-        <p>
-            Lower jawbones like this one could be repurposed as scrapers 
-            that would be used in tasks like shelling corn or processing leather and hide. 
-            Other bones, like the shoulder blade, also made effective scrapers, as did modified stones. 
-        </p>
-    </section>
-    <!-- 4 -->
-    <!-- <section class="artifact-feature-content-magnify">
-        <h2 class="hidden">Artifact Feature Content</h2>
-        <h3 class="feature-title">Amazing Title Here</h3>
-        <div class="artifact-size-image">
-            <img src="images/mandible-side.png" alt="Image of an artifact">
-        </div>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos odit optio obcaecati incidunt ipsum, a
-            voluptatum eum assumenda velit perferendis? Ad, quos. Aperiam neque molestiae ut facilis. Quae,labore
-            delectus.
-        </p>
-    </section> -->
-    <!-- 5 -->
-    <section>
-        <h2 class="hidden">Artifact Featue Content</h2>
-    </section>
+        </section>
     </div>
     <!-- footer -->
     <footer>
-    <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
+        <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
     </footer>
-    
+
     <script src="js/ScrollMagic.min.js"></script>
     <script src="js/scrollmagic.js"></script>
     <script src="js/main.js"></script>
