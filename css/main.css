@@ -592,6 +592,17 @@ footer small {
   margin-left: 10%;
 }
 
+.backToCamCon {
+  display: flex;
+  margin-top: 20%;
+  justify-content: center;
+}
+
+.cameraLink {
+  padding-left: 5%;
+  margin-top: -15%;
+}
+
 model-viewer {
   height: 35vh;
   width: 100vw;

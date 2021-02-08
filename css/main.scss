@@ -316,7 +316,6 @@ h3 {
     }
 }
 
-
 /* 3  */
 
 .artifact-feature-content {
@@ -647,6 +646,17 @@ footer {
 .modal-header img {
     width: 80%;
     margin-left: 10%;
+}
+
+.backToCamCon {
+    display: flex;
+    margin-top: 20%;
+    justify-content: center;
+}
+
+.cameraLink {
+    padding-left: 5%;
+    margin-top: -15%;
 }
 
 model-viewer {
