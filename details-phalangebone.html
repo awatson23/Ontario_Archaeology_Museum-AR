@@ -8,7 +8,9 @@
     <script src="js/jsQR.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="icon" href="images/flavicon-moalogo.png" type="image/gif" sizes="16x16">
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -24,7 +26,6 @@
                 <li><a href="lawsonsite.html">lawson site</a></li>
                 <li><a href="about.html">about us</a></li>
                 <li><a href="supportus.html">support us</a></li>
-                <!-- <li><a href="#">faq</a></li> -->
             </ul>
             <!-- hamburger -->
             <div class="burger">
@@ -36,91 +37,81 @@
 
         <div class="logoWrapper">
             <h2 class="hidden">Logo</h2>
-            <a href="index.html"><img src="images/moalogo_final_transparent.png" alt="logo picture for header" id="moalogo" width="650"></a>
+            <a href="index.html"><img src="images/moalogo_final_transparent.png" alt="logo picture for header"
+                    id="moalogo" width="650"></a>
         </div>
-    
-              <!-- artifact featured content -->
-            <section class="artifact-ar-image">
-                <h2 class="hidden">Artifact Featured Content</h2>
 
-                <model-viewer src="assets/3d/phalange-gltf.gltf" alt="Deer Phalange Bone 3d model"
-                    auto-rotate camera-controls autoplay
-                    poster="images/phalange_bone3.png"
-                    ar ar-modes="webxr scene-viewer quick-look"
-                    ar-scale="auto" ios-src="assets/usdz/phalange_bone.usdz">
-                </model-viewer>
+        <div class="backToCamCon">
+            <a href="index.html" class="cameraLink"><i class="fas fa-camera"></i> back to scanner</a>
+        </div>
 
-            </section>
-    
-             <!-- artifact introduction -->
-             <section class="artifact-introduction">
-                <h2 class="hidden">Artifact Introduction</h2>
-                <h3>Phalange Bone</h3>
-                <!-- Size -->
-                <div class="artifact-size-parent">
-                    <!-- size detail -->
-                    <div class="measure">
-                        <p>1-2in</p>
-                    </div>
-                    <div class="artifact-vertical-line">
-                        <!-- keyline -->
-                    </div>
-                    <div class="artifact-dimension-image">
-                        <img src="images/phalange_bone1.png" alt="Image of an artifact">
-                    </div>
+        <!-- artifact featured content -->
+        <section class="artifact-ar-image">
+            <h2 class="hidden">Deer Phalange Bone Featured Content</h2>
+
+            <model-viewer src="assets/3d/phalange-gltf.gltf" alt="Deer Phalange Bone 3d model" auto-rotate
+                camera-controls autoplay poster="images/phalange_bone3.png" ar ar-modes="webxr scene-viewer quick-look"
+                ar-scale="auto" ios-src="assets/usdz/phalange_bone.usdz">
+            </model-viewer>
+        </section>
+
+        <!-- artifact introduction -->
+        <section class="artifact-introduction">
+            <h2 class="hidden">Deer Phalange Bone Introduction</h2>
+            <h3>Phalange Bone</h3>
+            <!-- Size -->
+            <div class="artifact-size-parent">
+                <!-- size detail -->
+                <div class="measure">
+                    <p>1-2in</p>
                 </div>
-                <!-- desciption -->
-                <div class="artifact-introduction-description">
-                    <p><strong>Material:</strong> Deer Bone</p>
+                <div class="artifact-vertical-line">
+                    <!-- keyline -->
                 </div>
-            </section>
-    
-    <!-- 2 -->
-    <section class="artifact-origins-story">
-        <h2 class="hidden">Artifact Origin Story</h2>
-        <div>
-            <h3>Hanging Decorations</h3>
+                <div class="artifact-dimension-image">
+                    <img src="images/phalange_bone1.png" alt="Image of an artifact">
+                </div>
+            </div>
+            <!-- description -->
+            <div class="artifact-introduction-description">
+                <p><strong>Material:</strong> Deer Bone</p>
+            </div>
+        </section>
+
+        <!-- 2 -->
+        <section class="artifact-origins-story">
+            <h2 class="hidden">Deer Phalange Bone Origin Story</h2>
+            <div>
+                <h3>Hanging Decorations</h3>
+                <p>
+                    Modified deer phalange bones are a common artifact
+                    recovered from the Lawson site. Once processed, the bones are
+                    mostly hollow, but holes were drilled
+                    through the top to allow for stringing and hanging.Archaeologists believe a
+                    phalange like this might have been used as a toggle or hanging bead on clothing.
+                </p>
+            </div>
+        </section>
+        <!-- 3 -->
+        <section class="artifact-feature-content">
+            <h2 class="hidden">Deer Phalange Bone Feature Content</h2>
+            <h3 class="feature-title">Fun and games</h3>
+            <div class="artifact-size-image">
+                <img src="images/phalange_bone2.png" alt="Image of an artifact">
+            </div>
             <p>
-                Modified deer phalange bones are a common artifact 
-                recovered from the Lawson site. Once processed, the bones are 
-                mostly hollow, but holes were drilled
-                through the top to allow for stringing and hanging.Archaeologists believe a 
-                phalange like this might have been used as a toggle or hanging bead on clothing. 
+                Phalange bones found at later sites show clear contextual evidence of being the cup half of a
+                cup-and-pin game, and Lawson site inhabitants may have used them the same way.
             </p>
+        </section>
+
+        <div class="backToCamCon">
+            <a href="index.html" class="cameraLink"><i class="fas fa-camera"></i> back to scanner</a>
         </div>
-    </section>
-    <!-- 3 -->
-    <section class="artifact-feature-content">
-        <h2 class="hidden">Artifact Feature Content</h2>
-        <h3 class="feature-title">Fun and games</h3>
-        <div class="artifact-size-image">
-            <img src="images/phalange_bone2.png" alt="Image of an artifact">
-        </div>
-        <p>
-            Phalange bones found at later sites show clear contextual evidence of being the cup half of a cup-and-pin game, and Lawson site inhabitants may have used them the same way.
-        </p>
-    </section>
-    <!-- 4 -->
-    <!-- <section class="artifact-feature-content-magnify">
-        <h2 class="hidden">Artifact Feature Content</h2>
-        <h3 class="feature-title">Amazing Title Here</h3>
-        <div class="artifact-size-image">
-            <img src="images/phalange_bone3.png" alt="Image of an artifact">
-        </div>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos odit optio obcaecati incidunt ipsum, a
-            voluptatum eum assumenda velit perferendis? Ad, quos. Aperiam neque molestiae ut facilis. Quae,labore
-            delectus.
-        </p>
-    </section> -->
-    <!-- 5 -->
-    <section>
-        <h2 class="hidden">Artifact Featue Content</h2>
-    </section>
     </div>
     <!-- footer -->
     <footer>
-    <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
+        <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
     </footer>
 
     <script src="js/ScrollMagic.min.js"></script>

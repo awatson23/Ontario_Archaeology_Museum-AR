@@ -316,7 +316,6 @@ h3 {
     }
 }
 
-
 /* 3  */
 
 .artifact-feature-content {
@@ -345,7 +344,6 @@ h3 {
 .artifact-vertical-line.scroll-anim {
     height: 200px;
 }
-
 
 /* artifact origin story */
 
@@ -647,6 +645,17 @@ footer {
 .modal-header img {
     width: 80%;
     margin-left: 10%;
+}
+
+.backToCamCon {
+    display: flex;
+    margin-top: 20%;
+    justify-content: center;
+}
+
+.cameraLink {
+    padding-left: 5%;
+    margin-top: -11%;
 }
 
 model-viewer {
