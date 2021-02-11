@@ -1,172 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>Museum of Ontario Archaeology - AR App</title>
-    <script src="js/jsQR.js"></script>
 
-    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <title>Museum of Ontario Archaeology - AR App</title>
+  <script src="js/jsQR.js"></script>
 
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
-    ></script>
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      href="images/flavicon-moalogo.png"
-      type="image/gif"
-      sizes="16x16"
-    />
-    <link href="css/reset.css" rel="stylesheet" type="text/css" />
-    <link href="css/main.css" rel="stylesheet" type="text/css" />
-  </head>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
-  <body>
-    <div class="mainContainer">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="images/flavicon-moalogo.png" type="image/gif" sizes="16x16" />
+  <link href="css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
 
-        <!-- Main Navigation -->
-        <div class="nav">
-            <h2 class="hidden">Main Navigator</h2>
-            <ul class="nav-links">
-                <li><a href="index.html">home</a></li>
-                <li><a href="lawsonsite.html">lawson site</a></li>
-                <li><a href="about.html">about us</a></li>
-                <li><a href="supportus.html">support us</a></li>
-                <!-- <li><a href="#">faq</a></li> -->
-            </ul>
-            <!-- hamburger -->
-            <div class="burger">
-                <!-- burger lines -->
-                <div class="line1"></div>
-                <div class="line2"></div>
-            </div>
+<body>
+  <div class="mainContainer">
 
-        </div>
-      
-      <div class="logoWrapper">
-        <h2 class="hidden">Logo</h2>
-        <a href="index.html"><img
-            src="images/moalogo_final_transparent.png"
-            alt="logo picture for header"
-            id="moalogo"
-            width="650"
-        /></a>
+    <!-- Main Navigation -->
+    <div class="nav">
+      <h2 class="hidden">Main Navigator</h2>
+      <ul class="nav-links">
+        <li><a href="index.html">home</a></li>
+        <li><a href="lawsonsite.html">lawson site</a></li>
+        <li><a href="about.html">about us</a></li>
+        <li><a href="supportus.html">support us</a></li>
+      </ul>
+      <!-- hamburger -->
+      <div class="burger">
+        <!-- burger lines -->
+        <div class="line1"></div>
+        <div class="line2"></div>
       </div>
-
-      <!-- artifact featured content -->
-      <section class="artifact-ar-image">
-        <h2 class="hidden">Artifact Featured Content</h2>
-        <model-viewer
-          src="assets/3d/pot-normal_lighter.glb"
-          alt="3D scanned pot model"
-          auto-rotate
-          camera-controls
-          autoplay
-          exposure="3.34"
-          shadow-intensity="0.7"
-          shadow-softness="1"
-          poster="images/3d-scanned-pot.png"
-          ar
-          ar-modes="webxr scene-viewer quick-look"
-          ar-scale="auto"
-          ios-src="assets/usdz/3d-scanning-pot.usdz"
-        >
-        </model-viewer>
-      </section>
-
-      <!-- artifact introduction -->
-      <section class="artifact-introduction">
-        <h2 class="hidden">Artifact Introduction</h2>
-        <h3>Ceramic Pot</h3>
-        <!-- Size -->
-        <div class="artifact-size-parent">
-          <!-- size detail -->
-          <div class="measure">
-            <p>12.05cm</p>
-          </div>
-          <div class="artifact-vertical-line">
-            <!-- keyline -->
-          </div>
-          <div class="artifact-dimension-image">
-            <img src="images/3d-scanned-pot.png" alt="Image of an artifact" />
-          </div>
-        </div>
-        <!-- desciption -->
-        <div class="artifact-introduction-description">
-          <p><strong>Period ca:</strong> 1500 AD</p>
-          <p><strong>Material:</strong> Ceramic</p>
-        </div>
-      </section>
-
-      <!-- 2 -->
-      <section class="artifact-origins-story">
-        <h2 class="hidden">Artifact Origin Story</h2>
-        <div>
-          <h3>Ceramic Pot</h3>
-          <p>
-            This reconstructed section of the upper half of a pot shows features
-            shared by many of the Lawson site vessels. Its body is round and
-            globular, while the neck is short and curved below a rim that has
-            been thickened, creating a kind of collar to the top of the pot.
-          </p>
-        </div>
-      </section>
-      <!-- 3 -->
-      <section class="artifact-feature-content">
-        <h2 class="hidden">Artifact Feature Content</h2>
-        <h3 class="feature-title">The Beauty of The Pot's Design</h3>
-        <div class="artifact-size-image">
-          <img
-            src="images/3d-scanned-pot-front.png"
-            alt="Image of an artifact"
-          />
-        </div>
-        <p>
-          The decoration on the rim consists of sets of oblique-angled lines
-          impressed into the clay. Each set of lines alternates their angle
-          along the rim, creating a broader triangular motif. This form of pot
-          and style of rim decoration is found across the Lawson site and on
-          sites from across this region of Ontario that date around 1500 AD.
-        </p>
-      </section>
-      <!-- 4 -->
-      <!-- <section class="artifact-feature-content-magnify">
-        <h2 class="hidden">Artifact Feature Content</h2>
-        <h3 class="feature-title">Amazing Title Here</h3>
-        <div class="artifact-size-image">
-            <img src="images/mandible-side.png" alt="Image of an artifact">
-        </div>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos odit optio obcaecati incidunt ipsum, a
-            voluptatum eum assumenda velit perferendis? Ad, quos. Aperiam neque molestiae ut facilis. Quae,labore
-            delectus.
-        </p>
-    </section> -->
-      <!-- 5 -->
-      <section>
-        <h2 class="hidden">Artifact Featue Content</h2>
-      </section>
     </div>
-    <!-- footer -->
-    <footer>
-      <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
-    </footer>
+    <div class="logoWrapper">
+      <h2 class="hidden">Logo</h2>
+      <a href="index.html"><img src="images/moalogo_final_transparent.png" alt="logo picture for header" id="moalogo"
+          width="650" /></a>
+    </div>
 
-    <script src="js/ScrollMagic.min.js"></script>
-    <script src="js/scrollmagic.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/functionality.js"></script>
-  </body>
+    <div class="backToCamCon">
+      <a href="index.html" class="cameraLink"><i class="fas fa-camera"></i> back to scanner</a>
+    </div>
+
+    <!-- ceramic pot featured content -->
+    <section class="artifact-ar-image">
+      <h2 class="hidden">Ceramic Pot AR model</h2>
+      <model-viewer src="assets/3d/pot-normal_lighter.glb" alt="3D scanned pot model" auto-rotate camera-controls
+        autoplay exposure="3.34" shadow-intensity="0.7" shadow-softness="1" poster="images/3d-scanned-pot.png" ar
+        ar-modes="webxr scene-viewer quick-look" ar-scale="auto" ios-src="assets/usdz/3d-scanning-pot.usdz">
+      </model-viewer>
+    </section>
+
+    <!-- ceramic pot introduction -->
+    <section class="artifact-introduction">
+      <h2 class="hidden">Ceramic Pot Introduction</h2>
+      <h3>Ceramic Pot</h3>
+      <!-- Size -->
+      <div class="artifact-size-parent">
+        <!-- size detail -->
+        <div class="measure">
+          <p>12.05cm</p>
+        </div>
+        <div class="artifact-vertical-line">
+          <!-- keyline -->
+        </div>
+        <div class="artifact-dimension-image">
+          <img src="images/3d-scanned-pot.png" alt="Ceramic pot image" />
+        </div>
+      </div>
+      <!-- description -->
+      <div class="artifact-introduction-description">
+        <p><strong>Period ca:</strong> 1500 AD</p>
+        <p><strong>Material:</strong> Ceramic</p>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="artifact-origins-story">
+      <h2 class="hidden">Ceramic Pot Origin Story</h2>
+      <div>
+        <h3>Ceramic Pot</h3>
+        <p>
+          This reconstructed section of the upper half of a pot shows features
+          shared by many of the Lawson site vessels. Its body is round and
+          globular, while the neck is short and curved below a rim that has
+          been thickened, creating a kind of collar to the top of the pot.
+        </p>
+      </div>
+    </section>
+    <!-- 3 -->
+    <section class="artifact-feature-content">
+      <h2 class="hidden">Ceramic Pot Featured Content: Design</h2>
+      <h3 class="feature-title">The Beauty of The Pot's Design</h3>
+      <div class="artifact-size-image">
+        <img src="images/3d-scanned-pot-front.png" alt="Ceramic pot image" />
+      </div>
+      <p>
+        The decoration on the rim consists of sets of oblique-angled lines
+        impressed into the clay. Each set of lines alternates their angle
+        along the rim, creating a broader triangular motif. This form of pot
+        and style of rim decoration is found across the Lawson site and on
+        sites from across this region of Ontario that date around 1500 AD.
+      </p>
+    </section>
+    <div class="backToCamCon">
+      <a href="index.html" class="cameraLink"><i class="fas fa-camera"></i> back to scanner</a>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <small>&copy; Copyright 2020, Museum of Ontario Archaeology</small>
+  </footer>
+
+  <script src="js/ScrollMagic.min.js"></script>
+  <script src="js/scrollmagic.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/functionality.js"></script>
+</body>
+
 </html>
