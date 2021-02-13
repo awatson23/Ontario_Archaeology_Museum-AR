@@ -3,9 +3,9 @@ var popUp = document.getElementById("popUpWindow");
 
 var span = document.getElementsByClassName("close")[0];
 
-// window.onload = function() {
-//     popUp.style.display = "block";
-// }
+window.onload = function() {
+    popUp.style.display = "block";
+}
 
 
 span.onclick = function() {
@@ -30,7 +30,7 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("closeTwo")[0];
+var spanTwo = document.getElementsByClassName("closeTwo")[0];
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -38,7 +38,7 @@ btn.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+spanTwo.onclick = function() {
     modal.style.display = "none";
 }
 
