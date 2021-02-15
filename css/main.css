@@ -174,18 +174,48 @@ h3 {
     width: 60%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 30px; }
+    margin-bottom: 10px; }
   .qr-instruction div {
     width: 50%;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 100px; }
+    margin-bottom: 10px; }
 
 .instruction-title {
   font-size: 7vw;
   font-weight: 400;
   margin-top: 30px;
   margin-bottom: 20px; }
+
+ #androidinstructions {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  text-align: center;
+  }
+
+  #androidinstructions video {
+    width: 50%;
+  }
+
+  #iOSinstructions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   text-align: center;
+   }
+
+  #iOSinstructions video {
+    width: 50%;
+  }
+
+  .video-instruction-text {
+    padding-top: 15%;
+    padding-bottom: 10%;
+    font-size: 6vw;
+  }
 
 /* artifact featured content */
 /* center text */
